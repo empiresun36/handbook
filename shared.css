@@ -86,7 +86,7 @@ main { padding-bottom: 80px; }
 .hero { padding: 40px 20px 48px; position: relative; overflow: hidden; }
 .hero::before { content: ''; position: absolute; bottom: -30px; left: -20px; width: 200px; height: 200px; border-radius: 50%; background: rgba(200,169,110,0.06); }
 .hero::after { content: ''; position: absolute; top: -40px; right: -30px; width: 180px; height: 180px; border-radius: 50%; background: rgba(200,169,110,0.05); }
-.hero-badge { display: inline-block; background: rgba(200,169,110,0.2); color: var(--accent); font-size: 11px; padding: 4px 12px; border-radius: 20px; letter-spacing: 0.1em; margin-bottom: 16px; border: 1px solid rgba(200,169,110,0.3); }
+.hero-badge { display: inline-block; background: rgba(200,169,110,0.2); color: var(--accent); font-size: 14px; padding: 4px 12px; border-radius: 20px; letter-spacing: 0.1em; margin-bottom: 16px; border: 1px solid rgba(200,169,110,0.3); }
 .hero h2 { font-family: 'Noto Serif TC', serif; color: #fff; font-size: 26px; font-weight: 600; line-height: 1.4; margin-bottom: 8px; }
 .hero p { color: rgba(255,255,255,0.65); font-size: 13px; line-height: 1.7; margin-bottom: 24px; }
 .hero-stats { display: flex; gap: 12px; }
