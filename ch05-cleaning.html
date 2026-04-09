@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>第五篇：清潔管理準則｜社區管理規劃手冊</title>
+<link rel="stylesheet" href="shared.css">
+</head>
+<body>
+
+<div class="top-bar">
+  <div>
+    <div class="top-bar-title">第五篇：清潔管理準則</div>
+    <div class="top-bar-sub">CLEANING STAFF GUIDELINES</div>
+  </div>
+  <button class="menu-btn" onclick="openNav()" aria-label="選單"><span></span><span></span><span></span></button>
+</div>
+
+<div class="nav-overlay" id="navOverlay" onclick="closeNav()"></div>
+<nav class="nav-drawer" id="navDrawer">
+  <button class="nav-close" onclick="closeNav()">✕</button>
+  <div class="nav-header"><h1>社區管理規劃手冊</h1><p>Community Management Handbook</p></div>
+  <div class="nav-section-label">快速導覽</div>
+  <a class="nav-item" href="index.html"><div class="nav-item-icon">🏠</div>首頁總覽</a>
+  <a class="nav-item" href="ch01-rules.html"><div class="nav-item-icon">📜</div>第一篇：社區規約</a>
+  <a class="nav-item" href="ch02-committee.html"><div class="nav-item-icon">🏛️</div>第二篇：管委會手冊</a>
+  <a class="nav-item" href="ch03-residents.html"><div class="nav-item-icon">👥</div>第三篇：住戶生活公約</a>
+  <a class="nav-item" href="ch04-property.html"><div class="nav-item-icon">🔒</div>第四篇：物業管理準則</a>
+  <a class="nav-item active" href="ch05-cleaning.html"><div class="nav-item-icon">🧹</div>第五篇：清潔管理準則</a>
+  <a class="nav-item" href="contact.html"><div class="nav-item-icon">📞</div>緊急聯絡</a>
+  <div class="nav-section-label">版本資訊</div>
+  <div class="nav-item" style="cursor:default;"><div class="nav-item-icon">📅</div>最後更新：2025年1月</div>
+</nav>
+
+<main>
+  <div class="page-header" style="background: linear-gradient(135deg, #1a2a3a, #2a4050);">
+    <div class="page-header-sub" style="color:rgba(140,200,255,0.7);">CHAPTER 05</div>
+    <h2>清潔管理人員作業準則</h2>
+    <p>Cleaning Staff Operation Guidelines</p>
+  </div>
+
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="switchTab(this,'ctab-daily')">每日作業</button>
+    <button class="tab-btn" onclick="switchTab(this,'ctab-weekly')">每週深度</button>
+    <button class="tab-btn" onclick="switchTab(this,'ctab-monthly')">每月例行</button>
+    <button class="tab-btn" onclick="switchTab(this,'ctab-waste')">垃圾清運</button>
+    <button class="tab-btn" onclick="switchTab(this,'ctab-tools')">器材管理</button>
+  </div>
+
+  <!-- ══ TAB 1：每日作業 ══ -->
+  <div class="tab-panel active" id="ctab-daily">
+    <div class="chapter-list">
+      <div class="chapter-card" id="cl1">
+        <div class="chapter-header" onclick="toggleChapter('cl1')">
+          <div class="chapter-num" style="background:#1a2a3a;color:#8cc8ff;">早班</div>
+          <div class="chapter-info"><h4>早班作業（07:00–12:00）</h4><p>大廳、電梯、走廊、停車場</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <!-- ★ 維護提示：修改 schedule-task 內的時間與工作內容 -->
+            <div class="schedule-grid">
+              <div class="schedule-row"><div class="schedule-time">07:00</div><div class="schedule-task">清掃大廳、玄關，擦拭信箱區及公告欄</div></div>
+              <div class="schedule-row"><div class="schedule-time">07:30</div><div class="schedule-task">清潔電梯（地板拖拭、四壁擦拭、按鍵面板消毒）</div></div>
+              <div class="schedule-row"><div class="schedule-time">08:00</div><div class="schedule-task">各樓層走廊清掃及拖地（由頂樓至 B1）</div></div>
+              <div class="schedule-row"><div class="schedule-time">09:00</div><div class="schedule-task">地下停車場通道清掃，清除油漬</div></div>
+              <div class="schedule-row"><div class="schedule-time">10:00</div><div class="schedule-task">中庭景觀區落葉清理、地面沖洗</div></div>
+              <div class="schedule-row"><div class="schedule-time">11:00</div><div class="schedule-task">垃圾間清理及噴藥消毒，補充垃圾袋</div></div>
+              <div class="schedule-row"><div class="schedule-time">11:30</div><div class="schedule-task">填寫早班清潔工作日誌，異常回報</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-card" id="cl2">
+        <div class="chapter-header" onclick="toggleChapter('cl2')">
+          <div class="chapter-num" style="background:#1a2a3a;color:#8cc8ff;">下午</div>
+          <div class="chapter-info"><h4>下午班作業（13:00–18:00）</h4><p>公廁、健身房、資源回收</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <div class="schedule-grid">
+              <div class="schedule-row"><div class="schedule-time">13:00</div><div class="schedule-task">公共廁所清潔，補充衛生紙、洗手乳、擦手紙</div></div>
+              <div class="schedule-row"><div class="schedule-time">14:00</div><div class="schedule-task">健身房器材擦拭消毒，地板清掃</div></div>
+              <div class="schedule-row"><div class="schedule-time">15:00</div><div class="schedule-task">大廳及電梯再次清掃（下班人流前整備）</div></div>
+              <div class="schedule-row"><div class="schedule-time">16:00</div><div class="schedule-task">資源回收整理，依類別分裝</div></div>
+              <div class="schedule-row"><div class="schedule-time">17:00</div><div class="schedule-task">樓梯間扶手擦拭、公共座椅消毒</div></div>
+              <div class="schedule-row"><div class="schedule-time">17:30</div><div class="schedule-task">填寫下午班日誌，交接給晚班或管理室</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-card" id="cl3">
+        <div class="chapter-header" onclick="toggleChapter('cl3')">
+          <div class="chapter-num" style="background:#1a2a3a;color:#8cc8ff;">標準</div>
+          <div class="chapter-info"><h4>清潔品質驗收標準</h4><p>各區域合格基準</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <div class="table-wrap">
+              <table>
+                <tr><th>區域</th><th>合格標準</th></tr>
+                <tr><td>大廳地板</td><td>無塵、無水漬，地板反光清晰</td></tr>
+                <tr><td>電梯</td><td>按鍵無指紋、天花板無蜘蛛網、無異味</td></tr>
+                <tr><td>走廊</td><td>無雜物堆積、牆角無積灰</td></tr>
+                <tr><td>停車場</td><td>車道標線清晰、無油漬殘留</td></tr>
+                <tr><td>公廁</td><td>馬桶內外潔白、地面乾燥、無異味</td></tr>
+                <tr><td>垃圾間</td><td>地面清潔、無惡臭、垃圾袋置放整齊</td></tr>
+              </table>
+            </div>
+            <div class="notice warn" style="margin-top:10px;"><div class="notice-icon">📋</div><div>主管每週進行品質查核並評分。連續兩次查核不合格需進行輔導，三次不合格依合約處理。</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ TAB 2：每週深度 ══ -->
+  <div class="tab-panel" id="ctab-weekly">
+    <div class="chapter-list">
+      <div class="chapter-card" id="cl4">
+        <div class="chapter-header" onclick="toggleChapter('cl4')">
+          <div class="chapter-num" style="background:#1a2a3a;color:#8cc8ff;">週排</div>
+          <div class="chapter-info"><h4>每週深度清潔排程</h4><p>各區輪替清潔</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <!-- ★ 維護提示：修改表格中的星期與清潔區域 -->
+            <div class="table-wrap">
+              <table>
+                <tr><th>星期</th><th>深度清潔區域</th></tr>
+                <tr><td>週一</td><td>電梯轎廂深度清潔、不鏽鋼亮光</td></tr>
+                <tr><td>週二</td><td>停車場地面洗刷、柱面擦拭</td></tr>
+                <tr><td>週三</td><td>公共廁所磁磚深刷、除垢、尿垢清除</td></tr>
+                <tr><td>週四</td><td>中庭景觀區沖洗、木椅消毒、噴水池清潔</td></tr>
+                <tr><td>週五</td><td>健身房器材深度清潔、地板拖洗</td></tr>
+                <tr><td>週六</td><td>屋頂平台清掃、排水孔疏通、屋頂設備擦拭</td></tr>
+              </table>
+            </div>
+            <div class="notice info" style="margin-top:10px;"><div class="notice-icon">📝</div><div>週深度清潔完成後須拍照存檔，附入週報表送主管確認。</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ TAB 3：每月例行 ══ -->
+  <div class="tab-panel" id="ctab-monthly">
+    <div class="chapter-list">
+      <div class="chapter-card" id="cl5">
+        <div class="chapter-header" onclick="toggleChapter('cl5')">
+          <div class="chapter-num" style="background:#1a2a3a;color:#8cc8ff;">月清</div>
+          <div class="chapter-info"><h4>每月例行清潔項目</h4><p>外牆、水池、設備</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <ul class="rule-list">
+              <li>全棟玻璃帷幕及公共窗戶清洗（外側由廠商施作）</li>
+              <li>水池、噴水池清潔及換水，水質處理</li>
+              <li>各樓梯間扶手、踢腳板深度消毒</li>
+              <li>地下室排水溝清疏，確認暢通</li>
+              <li>公告欄整理，更換過期公告</li>
+              <li>信箱區深度清潔及消毒</li>
+              <li>機房周邊環境清潔（不進入設備機房）</li>
+            </ul>
+            <div class="notice info" style="margin-top:8px;"><div class="notice-icon">📅</div><div>月清項目訂於每月最後一個週日（或遇假日順延）全員進行。</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ TAB 4：垃圾清運 ══ -->
+  <div class="tab-panel" id="ctab-waste">
+    <div class="chapter-list">
+      <div class="chapter-card" id="cl6">
+        <div class="chapter-header" onclick="toggleChapter('cl6')">
+          <div class="chapter-num" style="background:#1a2a3a;color:#8cc8ff;">垃圾</div>
+          <div class="chapter-info"><h4>垃圾清運時程</h4><p>收集、清運、消毒</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <div class="schedule-grid">
+              <div class="schedule-row"><div class="schedule-time">每日 19:30</div><div class="schedule-task">將各樓層走廊垃圾桶集中清空，移至 B1 垃圾間</div></div>
+              <div class="schedule-row"><div class="schedule-time">每日 20:00</div><div class="schedule-task">配合垃圾車時間，將垃圾推至社區指定投放點</div></div>
+              <div class="schedule-row"><div class="schedule-time">每日 21:00</div><div class="schedule-task">垃圾間地面清洗、噴藥消毒、關門上鎖</div></div>
+              <div class="schedule-row"><div class="schedule-time">週二/五</div><div class="schedule-task">資源回收整理，依類別分袋，交予回收車</div></div>
+            </div>
+            <div class="notice info" style="margin-top:10px;"><div class="notice-icon">♻️</div><div>資源回收須分類：紙類、鋁鐵罐、玻璃瓶、塑膠瓶、電池各別裝袋，不可混入一般垃圾。</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-card" id="cl7">
+        <div class="chapter-header" onclick="toggleChapter('cl7')">
+          <div class="chapter-num" style="background:#1a2a3a;color:#8cc8ff;">大型</div>
+          <div class="chapter-info"><h4>大型廢棄物處理</h4><p>申請、存放、清運</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <ul class="rule-list">
+              <li>住戶向管理室申請大型廢棄物清運，填寫申請單</li>
+              <li>清潔人員協助移至 B1 暫存區，標示清運日期</li>
+              <li>每月第二週聯絡清運廠商統一清運</li>
+              <li>禁止住戶自行棄置於公共走廊或電梯旁</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ TAB 5：器材管理 ══ -->
+  <div class="tab-panel" id="ctab-tools">
+    <div class="chapter-list">
+      <div class="chapter-card" id="cl8">
+        <div class="chapter-header" onclick="toggleChapter('cl8')">
+          <div class="chapter-num" style="background:#1a2a3a;color:#8cc8ff;">器材</div>
+          <div class="chapter-info"><h4>清潔器材管理</h4><p>領用、維護、汰換</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <ul class="rule-list">
+              <li>器材由清潔主管統一採購、驗收並建檔</li>
+              <li>每日交班前清點器材，歸位整齊於清潔間</li>
+              <li>器材損壞立即填寫「器材報修單」，停用等待維修</li>
+              <li>拖把、刷具等消耗品達使用壽命定期更換</li>
+              <li>高壓沖洗機、洗地機等大型器材定期保養</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-card" id="cl9">
+        <div class="chapter-header" onclick="toggleChapter('cl9')">
+          <div class="chapter-num" style="background:#1a2a3a;color:#8cc8ff;">藥品</div>
+          <div class="chapter-info"><h4>清潔藥品安全管理</h4><p>存放、使用、個人防護</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <div class="article-item">
+              <div class="article-title">藥品存放規定</div>
+              <ul class="rule-list">
+                <li>所有清潔藥品存放於專用藥品櫃，上鎖管理</li>
+                <li>強酸強鹼分開存放，嚴禁混放</li>
+                <li>每瓶貼上標示：品名、濃度、危險等級、使用注意</li>
+                <li>過期藥品填寫廢棄申請，不得擅自倒入水槽或排水溝</li>
+              </ul>
+            </div>
+            <div class="article-item">
+              <div class="article-title">個人防護規定</div>
+              <ul class="rule-list">
+                <li>使用強力清潔劑時必須戴橡膠手套及護目鏡</li>
+                <li>清潔密閉空間（機房、地下室）時確保通風</li>
+                <li>皮膚接觸藥品立即以大量清水沖洗並通報</li>
+                <li>所有清潔人員每年參加職業安全教育訓練</li>
+              </ul>
+            </div>
+            <div class="notice danger" style="margin-top:8px;"><div class="notice-icon">⚠️</div><div>漂白水與酸性清潔劑禁止混合使用，會產生有毒氯氣，危及人身安全。</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-card" id="cl10">
+        <div class="chapter-header" onclick="toggleChapter('cl10')">
+          <div class="chapter-num" style="background:#1a2a3a;color:#8cc8ff;">紀錄</div>
+          <div class="chapter-info"><h4>清潔工作日誌規範</h4><p>填寫項目與回報</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <div class="table-wrap">
+              <table>
+                <tr><th>項目</th><th>填寫說明</th></tr>
+                <tr><td>日期/班次/姓名</td><td>每頁必填，不得留空</td></tr>
+                <tr><td>完成項目</td><td>依作業排程逐項勾選</td></tr>
+                <tr><td>未完成項目</td><td>說明原因及補做時間</td></tr>
+                <tr><td>異常狀況</td><td>破損、漏水、異味等須拍照附件</td></tr>
+                <tr><td>耗材補充</td><td>使用量及庫存回報</td></tr>
+              </table>
+            </div>
+            <div class="notice info" style="margin-top:10px;"><div class="notice-icon">📱</div><div>發現設施損壞（地板裂縫、燈具故障、漏水痕跡），立即拍照並通知管理室，填入異常欄位。</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<nav class="bottom-nav">
+  <a class="bottom-nav-item" href="index.html"><span>🏠</span>首頁</a>
+  <a class="bottom-nav-item" href="ch01-rules.html"><span>📜</span>規約</a>
+  <a class="bottom-nav-item" href="ch03-residents.html"><span>👥</span>住戶</a>
+  <a class="bottom-nav-item" href="ch04-property.html"><span>🔒</span>物業</a>
+  <a class="bottom-nav-item active" href="ch05-cleaning.html"><span>🧹</span>清潔</a>
+  <a class="bottom-nav-item" href="contact.html"><span>📞</span>聯絡</a>
+</nav>
+
+<script src="shared.js"></script>
+</body>
+</html>

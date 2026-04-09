@@ -1,0 +1,47 @@
+<!-- ══════════════════════════════════════
+     此檔說明共用導覽結構，各頁直接嵌入
+     修改導覽連結時，請同步修改所有 HTML
+══════════════════════════════════════ -->
+
+<!-- TOP BAR（各頁共用，只改 title 文字） -->
+<div class="top-bar">
+  <div>
+    <div class="top-bar-title">社區管理規劃手冊</div>
+    <div class="top-bar-sub">COMMUNITY MANAGEMENT HANDBOOK</div>
+  </div>
+  <button class="menu-btn" onclick="openNav()" aria-label="選單">
+    <span></span><span></span><span></span>
+  </button>
+</div>
+
+<!-- DRAWER NAV（左側抽屜） -->
+<div class="nav-overlay" id="navOverlay" onclick="closeNav()"></div>
+<nav class="nav-drawer" id="navDrawer">
+  <button class="nav-close" onclick="closeNav()">✕</button>
+  <div class="nav-header">
+    <h1>社區管理規劃手冊</h1>
+    <p>Community Management Handbook</p>
+  </div>
+  <div class="nav-section-label">快速導覽</div>
+  <a class="nav-item" href="index.html"><div class="nav-item-icon">🏠</div>首頁總覽</a>
+  <a class="nav-item" href="ch01-rules.html"><div class="nav-item-icon">📜</div>第一篇：社區規約</a>
+  <a class="nav-item" href="ch02-committee.html"><div class="nav-item-icon">🏛️</div>第二篇：管委會手冊</a>
+  <a class="nav-item" href="ch03-residents.html"><div class="nav-item-icon">👥</div>第三篇：住戶生活公約</a>
+  <a class="nav-item" href="ch04-property.html"><div class="nav-item-icon">🔒</div>第四篇：物業管理準則</a>
+  <a class="nav-item" href="ch05-cleaning.html"><div class="nav-item-icon">🧹</div>第五篇：清潔管理準則</a>
+  <a class="nav-item" href="contact.html"><div class="nav-item-icon">📞</div>緊急聯絡</a>
+  <div class="nav-section-label">版本資訊</div>
+  <div class="nav-item" style="cursor:default;">
+    <div class="nav-item-icon">📅</div>最後更新：2025年1月
+  </div>
+</nav>
+
+<!-- BOTTOM NAV（底部導覽，六個分頁） -->
+<nav class="bottom-nav">
+  <a class="bottom-nav-item" href="index.html" data-page="home"><span>🏠</span>首頁</a>
+  <a class="bottom-nav-item" href="ch01-rules.html" data-page="rules"><span>📜</span>規約</a>
+  <a class="bottom-nav-item" href="ch03-residents.html" data-page="residents"><span>👥</span>住戶</a>
+  <a class="bottom-nav-item" href="ch04-property.html" data-page="property"><span>🔒</span>物業</a>
+  <a class="bottom-nav-item" href="ch05-cleaning.html" data-page="cleaning"><span>🧹</span>清潔</a>
+  <a class="bottom-nav-item" href="contact.html" data-page="contact"><span>📞</span>聯絡</a>
+</nav>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>第一篇：社區規約｜社區管理規劃手冊</title>
+<link rel="stylesheet" href="shared.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div>
+    <div class="top-bar-title">第一篇：社區規約</div>
+    <div class="top-bar-sub">COMMUNITY CHARTER</div>
+  </div>
+  <button class="menu-btn" onclick="openNav()" aria-label="選單"><span></span><span></span><span></span></button>
+</div>
+
+<!-- DRAWER -->
+<div class="nav-overlay" id="navOverlay" onclick="closeNav()"></div>
+<nav class="nav-drawer" id="navDrawer">
+  <button class="nav-close" onclick="closeNav()">✕</button>
+  <div class="nav-header"><h1>社區管理規劃手冊</h1><p>Community Management Handbook</p></div>
+  <div class="nav-section-label">快速導覽</div>
+  <a class="nav-item" href="index.html"><div class="nav-item-icon">🏠</div>首頁總覽</a>
+  <a class="nav-item active" href="ch01-rules.html"><div class="nav-item-icon">📜</div>第一篇：社區規約</a>
+  <a class="nav-item" href="ch02-committee.html"><div class="nav-item-icon">🏛️</div>第二篇：管委會手冊</a>
+  <a class="nav-item" href="ch03-residents.html"><div class="nav-item-icon">👥</div>第三篇：住戶生活公約</a>
+  <a class="nav-item" href="ch04-property.html"><div class="nav-item-icon">🔒</div>第四篇：物業管理準則</a>
+  <a class="nav-item" href="ch05-cleaning.html"><div class="nav-item-icon">🧹</div>第五篇：清潔管理準則</a>
+  <a class="nav-item" href="contact.html"><div class="nav-item-icon">📞</div>緊急聯絡</a>
+  <div class="nav-section-label">版本資訊</div>
+  <div class="nav-item" style="cursor:default;"><div class="nav-item-icon">📅</div>最後更新：2025年1月</div>
+</nav>
+
+<main>
+  <div class="page-header" style="background: linear-gradient(135deg, #1a3a2a, #2d5a42);">
+    <div class="page-header-sub" style="color:rgba(200,169,110,0.7);">CHAPTER 01</div>
+    <h2>社區規約</h2>
+    <p>Community Charter</p>
+  </div>
+
+  <div style="padding: 16px 16px 0;">
+    <div class="notice info"><div class="notice-icon">ℹ️</div><div>本規約依《公寓大廈管理條例》及相關法規制定，全體區分所有權人及住戶均應遵守。</div></div>
+  </div>
+
+  <div class="chapter-list" style="margin-top:8px;">
+
+    <!-- ══ 第一章 ══ 修改此區塊內文字即可更新條文內容 -->
+    <div class="chapter-card" id="ch1">
+      <div class="chapter-header" onclick="toggleChapter('ch1')">
+        <div class="chapter-num">1</div>
+        <div class="chapter-info"><h4>第一章　總則</h4><p>名稱、範圍、定義、法源</p></div>
+        <div class="chapter-arrow">›</div>
+      </div>
+      <div class="chapter-body">
+        <div class="chapter-content">
+          <div class="article-item">
+            <div class="article-title"><span class="article-num">第 1 條</span>名稱與適用範圍</div>
+            <div class="article-body">本規約名稱為「○○社區公寓大廈規約」，適用於本社區全體區分所有權人、住戶及管理使用人。</div>
+          </div>
+          <div class="article-item">
+            <div class="article-title"><span class="article-num">第 2 條</span>名詞定義</div>
+            <ul class="rule-list">
+              <li>區分所有權人：持有本社區建物所有權之人</li>
+              <li>住戶：居住或使用本社區之人，含承租人</li>
+              <li>管委會：管理委員會之簡稱</li>
+              <li>物業管理公司：受管委會委託管理之法人</li>
+            </ul>
+          </div>
+          <div class="article-item">
+            <div class="article-title"><span class="article-num">第 3 條</span>法源依據</div>
+            <div class="article-body">本規約依據《公寓大廈管理條例》、《民法》及其他相關法令訂定。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 第二章 ══ -->
+    <div class="chapter-card" id="ch2">
+      <div class="chapter-header" onclick="toggleChapter('ch2')">
+        <div class="chapter-num">2</div>
+        <div class="chapter-info"><h4>第二章　區分所有權人大會</h4><p>召開、出席、決議、議事</p></div>
+        <div class="chapter-arrow">›</div>
+      </div>
+      <div class="chapter-body">
+        <div class="chapter-content">
+          <div class="article-item">
+            <div class="article-title"><span class="article-num">第 4 條</span>大會職權</div>
+            <ul class="rule-list">
+              <li>訂定及修訂規約</li>
+              <li>選任及解任管委會委員</li>
+              <li>議決規約所訂之各項事務</li>
+              <li>審議年度預算及決算</li>
+            </ul>
+          </div>
+          <div class="article-item">
+            <div class="article-title"><span class="article-num">第 5 條</span>召開時機</div>
+            <ul class="rule-list">
+              <li>定期大會：每年召開一次，由主委召集</li>
+              <li>臨時大會：主委或五分之一以上區分所有權人得提出申請召開</li>
+              <li>召開前應以書面通知全體，至少七日前發出</li>
+            </ul>
+          </div>
+          <div class="article-item">
+            <div class="article-title"><span class="article-num">第 6 條</span>決議門檻</div>
+            <div class="table-wrap">
+              <table>
+                <tr><th>議題類型</th><th>出席門檻</th><th>通過門檻</th></tr>
+                <tr><td>一般事項</td><td>1/5 以上</td><td>過半數</td></tr>
+                <tr><td>規約修訂</td><td>1/2 以上</td><td>3/4 以上</td></tr>
+                <tr><td>重大修繕</td><td>1/2 以上</td><td>過半數</td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 第三章 ══ -->
+    <div class="chapter-card" id="ch3">
+      <div class="chapter-header" onclick="toggleChapter('ch3')">
+        <div class="chapter-num">3</div>
+        <div class="chapter-info"><h4>第三章　共用部分管理</h4><p>範圍定義、使用規範、禁止事項</p></div>
+        <div class="chapter-arrow">›</div>
+      </div>
+      <div class="chapter-body">
+        <div class="chapter-content">
+          <div class="article-item">
+            <div class="article-title"><span class="article-num">第 7 條</span>共用部分範圍</div>
+            <ul class="rule-list">
+              <li>大廳、走廊、樓梯間、電梯及機房</li>
+              <li>地下停車場公共通道及設備空間</li>
+              <li>中庭、景觀區、屋頂平台</li>
+              <li>健身房、交誼廳等公共設施</li>
+            </ul>
+          </div>
+          <div class="article-item">
+            <div class="article-title"><span class="article-num">第 8 條</span>共用部分禁止事項</div>
+            <ul class="rule-list">
+              <li>禁止占用逃生通道及樓梯間堆放物品</li>
+              <li>禁止在公共區域擅自裝設廣告或設備</li>
+              <li>禁止破壞共用部分之設施設備</li>
+              <li>禁止私接水電或更改共用管線</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 第四章 ══ -->
+    <div class="chapter-card" id="ch4">
+      <div class="chapter-header" onclick="toggleChapter('ch4')">
+        <div class="chapter-num">4</div>
+        <div class="chapter-info"><h4>第四章　財務管理</h4><p>管理費、基金、帳務、滯繳</p></div>
+        <div class="chapter-arrow">›</div>
+      </div>
+      <div class="chapter-body">
+        <div class="chapter-content">
+          <div class="article-item">
+            <div class="article-title"><span class="article-num">第 9 條</span>管理費計收標準</div>
+            <!-- ★ 維護提示：修改下方表格中的金額數字 -->
+            <div class="table-wrap">
+              <table>
+                <tr><th>項目</th><th>金額</th><th>說明</th></tr>
+                <tr><td>一般管理費</td><td>NT$60/坪</td><td>每月按建物面積計算</td></tr>
+                <tr><td>特別維護基金</td><td>NT$15/坪</td><td>累積供重大維修使用</td></tr>
+                <tr><td>停車位費用</td><td>NT$1,500/格</td><td>每月按車位數計</td></tr>
+              </table>
+            </div>
+          </div>
+          <div class="article-item">
+            <div class="article-title"><span class="article-num">第 10 條</span>滯繳處理</div>
+            <ul class="rule-list">
+              <li>逾期未繳：第一個月書面催告一次</li>
+              <li>逾期三個月：管委會得限制公設使用</li>
+              <li>逾期六個月：依法訴追並加計利息</li>
+            </ul>
+          </div>
+          <div class="article-item">
+            <div class="article-title"><span class="article-num">第 11 條</span>財務公告</div>
+            <div class="article-body">管委會應每月公告收支明細，每季公告財務報表，每年提年度決算予大會審議。財務資料應張貼於公告欄及社區平台。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 第五章 ══ -->
+    <div class="chapter-card" id="ch5">
+      <div class="chapter-header" onclick="toggleChapter('ch5')">
+        <div class="chapter-num">5</div>
+        <div class="chapter-info"><h4>第五章　違規與罰則</h4><p>違規態樣、勸導、罰則、申訴</p></div>
+        <div class="chapter-arrow">›</div>
+      </div>
+      <div class="chapter-body">
+        <div class="chapter-content">
+          <div class="article-item">
+            <div class="article-title"><span class="article-num">第 12 條</span>違規處理程序</div>
+            <div class="schedule-grid">
+              <div class="schedule-row"><div class="schedule-time">第一步</div><div class="schedule-task">口頭勸導，紀錄存查</div></div>
+              <div class="schedule-row"><div class="schedule-time">第二步</div><div class="schedule-task">書面警告，限期改善</div></div>
+              <div class="schedule-row"><div class="schedule-time">第三步</div><div class="schedule-task">裁處罰款，公告姓名</div></div>
+              <div class="schedule-row"><div class="schedule-time">第四步</div><div class="schedule-task">移送主管機關或提起訴訟</div></div>
+            </div>
+          </div>
+          <div class="article-item">
+            <div class="article-title"><span class="article-num">第 13 條</span>罰款基準</div>
+            <!-- ★ 維護提示：修改下方 penalty-item 中的金額與說明文字 -->
+            <div style="margin-top:8px;">
+              <div class="penalty-item"><span class="penalty-level notice">書面警告</span><div style="font-size:13px;color:var(--text-secondary)">首次輕微違規，限期三日內改善</div></div>
+              <div class="penalty-item"><span class="penalty-level warn">NT$1,000</span><div style="font-size:13px;color:var(--text-secondary)">噪音、垃圾未分類、寵物未牽繩</div></div>
+              <div class="penalty-item"><span class="penalty-level fine">NT$3,000</span><div style="font-size:13px;color:var(--text-secondary)">未申報裝修、佔用逃生通道、拒不改善</div></div>
+              <div class="penalty-item"><span class="penalty-level fine">NT$5,000+</span><div style="font-size:13px;color:var(--text-secondary)">危害公共安全、違反消防規定</div></div>
+            </div>
+          </div>
+          <div class="article-item">
+            <div class="article-title"><span class="article-num">第 14 條</span>申訴程序</div>
+            <ul class="rule-list">
+              <li>受罰住戶得於接獲書面通知七日內提出書面申訴</li>
+              <li>申訴由管委會全體委員會議裁決</li>
+              <li>申訴結果以書面通知當事人</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 第六章 ══ -->
+    <div class="chapter-card" id="ch6">
+      <div class="chapter-header" onclick="toggleChapter('ch6')">
+        <div class="chapter-num">6</div>
+        <div class="chapter-info"><h4>第六章　規約修訂</h4><p>提案、程序、生效</p></div>
+        <div class="chapter-arrow">›</div>
+      </div>
+      <div class="chapter-body">
+        <div class="chapter-content">
+          <div class="article-item">
+            <div class="article-title"><span class="article-num">第 15 條</span>修訂程序</div>
+            <ul class="rule-list">
+              <li>由管委會或五分之一以上區分所有權人提案</li>
+              <li>提案需於大會召開前二十日以書面提出</li>
+              <li>修訂需經出席人數四分之三以上同意通過</li>
+              <li>通過後公告十日，無異議即生效</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end chapter-list -->
+</main>
+
+<!-- BOTTOM NAV -->
+<nav class="bottom-nav">
+  <a class="bottom-nav-item" href="index.html"><span>🏠</span>首頁</a>
+  <a class="bottom-nav-item active" href="ch01-rules.html"><span>📜</span>規約</a>
+  <a class="bottom-nav-item" href="ch03-residents.html"><span>👥</span>住戶</a>
+  <a class="bottom-nav-item" href="ch04-property.html"><span>🔒</span>物業</a>
+  <a class="bottom-nav-item" href="ch05-cleaning.html"><span>🧹</span>清潔</a>
+  <a class="bottom-nav-item" href="contact.html"><span>📞</span>聯絡</a>
+</nav>
+
+<script src="shared.js"></script>
+</body>
+</html>

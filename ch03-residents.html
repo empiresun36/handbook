@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>第三篇：住戶生活公約｜社區管理規劃手冊</title>
+<link rel="stylesheet" href="shared.css">
+</head>
+<body>
+
+<div class="top-bar">
+  <div>
+    <div class="top-bar-title">第三篇：住戶生活公約</div>
+    <div class="top-bar-sub">RESIDENT LIVING CODE</div>
+  </div>
+  <button class="menu-btn" onclick="openNav()" aria-label="選單"><span></span><span></span><span></span></button>
+</div>
+
+<div class="nav-overlay" id="navOverlay" onclick="closeNav()"></div>
+<nav class="nav-drawer" id="navDrawer">
+  <button class="nav-close" onclick="closeNav()">✕</button>
+  <div class="nav-header"><h1>社區管理規劃手冊</h1><p>Community Management Handbook</p></div>
+  <div class="nav-section-label">快速導覽</div>
+  <a class="nav-item" href="index.html"><div class="nav-item-icon">🏠</div>首頁總覽</a>
+  <a class="nav-item" href="ch01-rules.html"><div class="nav-item-icon">📜</div>第一篇：社區規約</a>
+  <a class="nav-item" href="ch02-committee.html"><div class="nav-item-icon">🏛️</div>第二篇：管委會手冊</a>
+  <a class="nav-item active" href="ch03-residents.html"><div class="nav-item-icon">👥</div>第三篇：住戶生活公約</a>
+  <a class="nav-item" href="ch04-property.html"><div class="nav-item-icon">🔒</div>第四篇：物業管理準則</a>
+  <a class="nav-item" href="ch05-cleaning.html"><div class="nav-item-icon">🧹</div>第五篇：清潔管理準則</a>
+  <a class="nav-item" href="contact.html"><div class="nav-item-icon">📞</div>緊急聯絡</a>
+  <div class="nav-section-label">版本資訊</div>
+  <div class="nav-item" style="cursor:default;"><div class="nav-item-icon">📅</div>最後更新：2025年1月</div>
+</nav>
+
+<main>
+  <div class="page-header" style="background: linear-gradient(135deg, #1a3520, #2d5c30);">
+    <div class="page-header-sub" style="color:rgba(160,220,140,0.7);">CHAPTER 03</div>
+    <h2>住戶生活公約</h2>
+    <p>Resident Living Code</p>
+  </div>
+
+  <div class="chapter-list" style="margin-top:16px;">
+
+    <!-- ══ 噪音 ══ -->
+    <div class="chapter-card" id="res1">
+      <div class="chapter-header" onclick="toggleChapter('res1')">
+        <div class="chapter-num" style="background:#1a3520;color:#a0dc8c;">1</div>
+        <div class="chapter-info"><h4>噪音管制</h4><p>安靜時段、施工、搬遷</p></div>
+        <div class="chapter-arrow">›</div>
+      </div>
+      <div class="chapter-body">
+        <div class="chapter-content">
+          <div class="notice danger"><div class="notice-icon">🔇</div><div>安靜時段：晚上 <strong>22:00</strong> 至隔日早上 <strong>07:00</strong>，禁止任何足以影響他人之噪音。</div></div>
+          <div class="article-item">
+            <div class="article-title">裝修施工時間</div>
+            <!-- ★ 維護提示：修改 schedule-task 內文字即可更新時間規定 -->
+            <div class="schedule-grid">
+              <div class="schedule-row"><div class="schedule-time">平日</div><div class="schedule-task">08:00–18:00（午休 12:00–14:00 禁止噪音施工）</div></div>
+              <div class="schedule-row"><div class="schedule-time">假日</div><div class="schedule-task">09:00–17:00</div></div>
+              <div class="schedule-row"><div class="schedule-time">國定假日</div><div class="schedule-task">全日禁止施工</div></div>
+            </div>
+          </div>
+          <div class="article-item">
+            <div class="article-title">搬遷作業</div>
+            <ul class="rule-list">
+              <li>搬遷前三日向管理室申請，取得搬遷許可</li>
+              <li>時間限制：平日 09:00–17:00，假日 09:00–14:00</li>
+              <li>使用電梯需事先預約並放置護墊保護</li>
+              <li>搬遷後清潔公共區域，廢棄物自行清運</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 裝修 ══ -->
+    <div class="chapter-card" id="res2">
+      <div class="chapter-header" onclick="toggleChapter('res2')">
+        <div class="chapter-num" style="background:#1a3520;color:#a0dc8c;">2</div>
+        <div class="chapter-info"><h4>裝修施工規定</h4><p>申請、規範、廢棄物</p></div>
+        <div class="chapter-arrow">›</div>
+      </div>
+      <div class="chapter-body">
+        <div class="chapter-content">
+          <ul class="rule-list">
+            <li>施工前須填寫「裝修申請表」並取得管委會核准</li>
+            <li>施工期間入口張貼核准公文，工人每日換發工作證</li>
+            <li>不得破壞承重牆、共用管線及防水層</li>
+            <li>建材、廢棄物不得堆置於公共走廊或停車場</li>
+            <li>廢棄物須每日清運至指定地點，不可丟入社區垃圾間</li>
+          </ul>
+          <div class="notice warn" style="margin-top:8px;"><div class="notice-icon">⚠️</div><div>未申報裝修經查獲，處罰款 NT$3,000 並限期停工，復工前重新申請。</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 停車 ══ -->
+    <div class="chapter-card" id="res3">
+      <div class="chapter-header" onclick="toggleChapter('res3')">
+        <div class="chapter-num" style="background:#1a3520;color:#a0dc8c;">3</div>
+        <div class="chapter-info"><h4>停車場使用規則</h4><p>停車位、速限、訪客</p></div>
+        <div class="chapter-arrow">›</div>
+      </div>
+      <div class="chapter-body">
+        <div class="chapter-content">
+          <ul class="rule-list">
+            <li>地下室行車速限 <strong>5 km/h</strong>，禁止鳴喇叭</li>
+            <li>僅限停放小型自用車，禁止貨車及大型車輛</li>
+            <li>停車位不得堆放雜物，充電設備須申請核准</li>
+            <li>訪客車輛停於指定訪客車位，不得超過 4 小時</li>
+            <li>禁止長期停放停用或未年檢車輛</li>
+            <li>機車停放於機車停車區，騎乘時須戴安全帽</li>
+          </ul>
+          <div class="notice warn"><div class="notice-icon">⚠️</div><div>違規停車先張貼警告，第二次起上報管委會依規約裁罰 NT$1,000。</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 垃圾 ══ -->
+    <div class="chapter-card" id="res4">
+      <div class="chapter-header" onclick="toggleChapter('res4')">
+        <div class="chapter-num" style="background:#1a3520;color:#a0dc8c;">4</div>
+        <div class="chapter-info"><h4>垃圾分類規定</h4><p>分類、時程、大型廢棄物</p></div>
+        <div class="chapter-arrow">›</div>
+      </div>
+      <div class="chapter-body">
+        <div class="chapter-content">
+          <!-- ★ 維護提示：修改表格中的時間與地點 -->
+          <div class="table-wrap">
+            <table>
+              <tr><th>類別</th><th>收集時間</th><th>地點</th></tr>
+              <tr><td>一般垃圾</td><td>每日 20:00–21:00</td><td>B1 垃圾間</td></tr>
+              <tr><td>資源回收</td><td>週二、五 19:00–21:00</td><td>B1 回收區</td></tr>
+              <tr><td>廚餘</td><td>每日 20:00–21:00</td><td>廚餘桶</td></tr>
+              <tr><td>大型廢棄物</td><td>需事先預約</td><td>向管理室申請</td></tr>
+            </table>
+          </div>
+          <div class="notice danger" style="margin-top:10px;"><div class="notice-icon">🚫</div><div>禁止將垃圾棄置於走廊、樓梯間或電梯口，違者罰款 NT$1,000。</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 寵物 ══ -->
+    <div class="chapter-card" id="res5">
+      <div class="chapter-header" onclick="toggleChapter('res5')">
+        <div class="chapter-num" style="background:#1a3520;color:#a0dc8c;">5</div>
+        <div class="chapter-info"><h4>寵物管理規定</h4><p>飼養登記、公共區域、清潔</p></div>
+        <div class="chapter-arrow">›</div>
+      </div>
+      <div class="chapter-body">
+        <div class="chapter-content">
+          <ul class="rule-list">
+            <li>飼養寵物須向管理室登記，填寫「寵物登記申請表」</li>
+            <li>進出公共區域必須使用牽繩，禁止讓寵物獨自行走</li>
+            <li>搭乘電梯時若有其他住戶，須主動詢問同意</li>
+            <li>寵物排泄物須立即清理，違者罰款 NT$1,000</li>
+            <li>禁止在公共區域餵食流浪動物</li>
+            <li>寵物吠叫影響住戶，經勸導無效得要求改善</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 公設 ══ -->
+    <div class="chapter-card" id="res6">
+      <div class="chapter-header" onclick="toggleChapter('res6')">
+        <div class="chapter-num" style="background:#1a3520;color:#a0dc8c;">6</div>
+        <div class="chapter-info"><h4>公共設施使用</h4><p>電梯、健身房、交誼廳</p></div>
+        <div class="chapter-arrow">›</div>
+      </div>
+      <div class="chapter-body">
+        <div class="chapter-content">
+          <div class="article-item">
+            <div class="article-title">電梯</div>
+            <ul class="rule-list">
+              <li>禁止在電梯內吸菸、飲食</li>
+              <li>搬運大型物品請事先預約，並自備護墊</li>
+              <li>電梯故障勿強行扳門，撥打緊急電話等待救援</li>
+            </ul>
+          </div>
+          <div class="article-item">
+            <div class="article-title">健身房／交誼廳（開放時間 06:00–23:00）</div>
+            <ul class="rule-list">
+              <li>使用前於管理室登記，每次限用 1 小時</li>
+              <li>使用後清潔器材，恢復原位</li>
+              <li>12 歲以下兒童須有成人陪同</li>
+              <li>交誼廳包場須提前三天申請，收清潔費 NT$300</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 門禁訪客 ══ -->
+    <div class="chapter-card" id="res7">
+      <div class="chapter-header" onclick="toggleChapter('res7')">
+        <div class="chapter-num" style="background:#1a3520;color:#a0dc8c;">7</div>
+        <div class="chapter-info"><h4>門禁與訪客管理</h4><p>門禁卡、訪客登記、包裹</p></div>
+        <div class="chapter-arrow">›</div>
+      </div>
+      <div class="chapter-body">
+        <div class="chapter-content">
+          <div class="article-item">
+            <div class="article-title">門禁卡管理</div>
+            <ul class="rule-list">
+              <li>每戶提供 2 張門禁卡，增補每張收 NT$300</li>
+              <li>遺失立即通報管理室停用，補辦費 NT$100</li>
+              <li>禁止借予非社區人員使用</li>
+            </ul>
+          </div>
+          <div class="article-item">
+            <div class="article-title">訪客與包裹</div>
+            <ul class="rule-list">
+              <li>訪客須至管理室登記，由住戶確認後放行</li>
+              <li>外送人員僅可在大廳等候，不得進入電梯</li>
+              <li>包裹代收最長保管 7 天，逾期退回寄件人</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ 緊急應變 ══ -->
+    <div class="chapter-card" id="res8">
+      <div class="chapter-header" onclick="toggleChapter('res8')">
+        <div class="chapter-num" style="background:#1a3520;color:#a0dc8c;">8</div>
+        <div class="chapter-info"><h4>緊急應變指引</h4><p>火災、地震、停電</p></div>
+        <div class="chapter-arrow">›</div>
+      </div>
+      <div class="chapter-body">
+        <div class="chapter-content">
+          <div class="notice danger"><div class="notice-icon">🔥</div><div><strong>火災：</strong>立刻按下火警警報，撥打 119，循安全梯向下逃生，<strong>禁止使用電梯</strong>。</div></div>
+          <div class="notice warn" style="margin-top:8px;"><div class="notice-icon">🌏</div><div><strong>地震：</strong>立即蹲低掩護，抓住固定物，待震停後依廣播指示疏散。</div></div>
+          <div class="notice info" style="margin-top:8px;"><div class="notice-icon">💡</div><div><strong>停電：</strong>聯絡管理室，使用手電筒，禁止蠟燭。緊急照明 10 秒內自動啟動。</div></div>
+          <div class="notice danger" style="margin-top:8px;"><div class="notice-icon">💨</div><div><strong>瓦斯洩漏：</strong>關閉瓦斯總開關，開窗通風，<strong>禁止使用任何電器</strong>，撤離後撥打瓦斯公司緊急電話。</div></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<nav class="bottom-nav">
+  <a class="bottom-nav-item" href="index.html"><span>🏠</span>首頁</a>
+  <a class="bottom-nav-item" href="ch01-rules.html"><span>📜</span>規約</a>
+  <a class="bottom-nav-item active" href="ch03-residents.html"><span>👥</span>住戶</a>
+  <a class="bottom-nav-item" href="ch04-property.html"><span>🔒</span>物業</a>
+  <a class="bottom-nav-item" href="ch05-cleaning.html"><span>🧹</span>清潔</a>
+  <a class="bottom-nav-item" href="contact.html"><span>📞</span>聯絡</a>
+</nav>
+
+<script src="shared.js"></script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>第四篇：物業管理準則｜社區管理規劃手冊</title>
+<link rel="stylesheet" href="shared.css">
+</head>
+<body>
+
+<div class="top-bar">
+  <div>
+    <div class="top-bar-title">第四篇：物業管理準則</div>
+    <div class="top-bar-sub">PROPERTY MANAGEMENT GUIDELINES</div>
+  </div>
+  <button class="menu-btn" onclick="openNav()" aria-label="選單"><span></span><span></span><span></span></button>
+</div>
+
+<div class="nav-overlay" id="navOverlay" onclick="closeNav()"></div>
+<nav class="nav-drawer" id="navDrawer">
+  <button class="nav-close" onclick="closeNav()">✕</button>
+  <div class="nav-header"><h1>社區管理規劃手冊</h1><p>Community Management Handbook</p></div>
+  <div class="nav-section-label">快速導覽</div>
+  <a class="nav-item" href="index.html"><div class="nav-item-icon">🏠</div>首頁總覽</a>
+  <a class="nav-item" href="ch01-rules.html"><div class="nav-item-icon">📜</div>第一篇：社區規約</a>
+  <a class="nav-item" href="ch02-committee.html"><div class="nav-item-icon">🏛️</div>第二篇：管委會手冊</a>
+  <a class="nav-item" href="ch03-residents.html"><div class="nav-item-icon">👥</div>第三篇：住戶生活公約</a>
+  <a class="nav-item active" href="ch04-property.html"><div class="nav-item-icon">🔒</div>第四篇：物業管理準則</a>
+  <a class="nav-item" href="ch05-cleaning.html"><div class="nav-item-icon">🧹</div>第五篇：清潔管理準則</a>
+  <a class="nav-item" href="contact.html"><div class="nav-item-icon">📞</div>緊急聯絡</a>
+  <div class="nav-section-label">版本資訊</div>
+  <div class="nav-item" style="cursor:default;"><div class="nav-item-icon">📅</div>最後更新：2025年1月</div>
+</nav>
+
+<main>
+  <div class="page-header" style="background: linear-gradient(135deg, #3a2510, #5c3d18);">
+    <div class="page-header-sub" style="color:rgba(255,210,140,0.7);">CHAPTER 04</div>
+    <h2>物業管理人員作業準則</h2>
+    <p>Property Management Staff Guidelines</p>
+  </div>
+
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="switchTab(this,'ptab-duty')">服勤規範</button>
+    <button class="tab-btn" onclick="switchTab(this,'ptab-security')">門禁保全</button>
+    <button class="tab-btn" onclick="switchTab(this,'ptab-equipment')">設施管理</button>
+    <button class="tab-btn" onclick="switchTab(this,'ptab-emergency')">緊急應變</button>
+    <button class="tab-btn" onclick="switchTab(this,'ptab-handover')">交班紀錄</button>
+  </div>
+
+  <!-- ══ TAB 1：服勤規範 ══ -->
+  <div class="tab-panel active" id="ptab-duty">
+    <div class="chapter-list">
+      <div class="chapter-card" id="pm1">
+        <div class="chapter-header" onclick="toggleChapter('pm1')">
+          <div class="chapter-num" style="background:#3a2510;color:#ffd28c;">1</div>
+          <div class="chapter-info"><h4>儀容與服裝規定</h4><p>制服、儀容、識別證</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <ul class="rule-list">
+              <li>著規定制服，保持整潔，佩戴識別證於胸前顯眼處</li>
+              <li>頭髮整齊，男性不留長髮及鬍鬚</li>
+              <li>工作期間不得配戴過多飾品</li>
+              <li>工作期間不得使用手機（緊急聯絡除外）</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-card" id="pm2">
+        <div class="chapter-header" onclick="toggleChapter('pm2')">
+          <div class="chapter-num" style="background:#3a2510;color:#ffd28c;">2</div>
+          <div class="chapter-info"><h4>禁止事項</h4><p>廉潔、保密、崗位紀律</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <ul class="rule-list">
+              <li>禁止收受住戶饋贈、借款或接受招待</li>
+              <li>禁止洩露住戶個人資料或社區安全資訊</li>
+              <li>禁止在值班崗位飲酒、吸菸</li>
+              <li>禁止擅離崗位，離崗須完成交接</li>
+              <li>禁止攜帶與工作無關之人員進入管制區域</li>
+            </ul>
+            <div class="notice danger" style="margin-top:8px;"><div class="notice-icon">🚫</div><div>違反上述規定，視情節輕重予以警告、停職或終止合約。</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ TAB 2：門禁保全 ══ -->
+  <div class="tab-panel" id="ptab-security">
+    <div class="chapter-list">
+      <div class="chapter-card" id="pm3">
+        <div class="chapter-header" onclick="toggleChapter('pm3')">
+          <div class="chapter-num" style="background:#3a2510;color:#ffd28c;">1</div>
+          <div class="chapter-info"><h4>訪客接待標準流程</h4><p>登記、確認、放行</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <div class="schedule-grid">
+              <div class="schedule-row"><div class="schedule-time">步驟 1</div><div class="schedule-task">詢問訪客姓名、拜訪對象及目的</div></div>
+              <div class="schedule-row"><div class="schedule-time">步驟 2</div><div class="schedule-task">撥通住戶內線電話確認</div></div>
+              <div class="schedule-row"><div class="schedule-time">步驟 3</div><div class="schedule-task">登記訪客資料於訪客登記簿（姓名、時間、目的）</div></div>
+              <div class="schedule-row"><div class="schedule-time">步驟 4</div><div class="schedule-task">發放訪客識別貼，放行進入</div></div>
+              <div class="schedule-row"><div class="schedule-time">步驟 5</div><div class="schedule-task">離去時收回識別貼，記錄離去時間</div></div>
+            </div>
+            <div class="notice warn" style="margin-top:10px;"><div class="notice-icon">⚠️</div><div>無法聯絡住戶確認之訪客一律婉拒入內，並請其稍候或改日再訪。</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-card" id="pm4">
+        <div class="chapter-header" onclick="toggleChapter('pm4')">
+          <div class="chapter-num" style="background:#3a2510;color:#ffd28c;">2</div>
+          <div class="chapter-info"><h4>夜間巡邏規範</h4><p>路線、頻率、打卡紀錄</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <div class="schedule-grid">
+              <div class="schedule-row"><div class="schedule-time">22:00</div><div class="schedule-task">第一次全區巡邏（路線：B2→B1→1F大廳→各樓梯間→屋頂）</div></div>
+              <div class="schedule-row"><div class="schedule-time">01:00</div><div class="schedule-task">第二次全區巡邏</div></div>
+              <div class="schedule-row"><div class="schedule-time">04:00</div><div class="schedule-task">第三次全區巡邏</div></div>
+              <div class="schedule-row"><div class="schedule-time">06:00</div><div class="schedule-task">晨間巡邏，確認大廳及公共設施狀態</div></div>
+            </div>
+            <ul class="rule-list" style="margin-top:10px;">
+              <li>巡邏時攜帶感應器，於各巡邏點完成感應打卡</li>
+              <li>發現異常立即聯絡值班主任及管委會</li>
+              <li>巡邏紀錄表須完整填寫，不得代簽或補填</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ TAB 3：設施管理 ══ -->
+  <div class="tab-panel" id="ptab-equipment">
+    <div class="chapter-list">
+      <div class="chapter-card" id="pm5">
+        <div class="chapter-header" onclick="toggleChapter('pm5')">
+          <div class="chapter-num" style="background:#3a2510;color:#ffd28c;">1</div>
+          <div class="chapter-info"><h4>每日設備點檢表</h4><p>點檢項目與頻率</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <!-- ★ 維護提示：修改表格中的設備項目與頻率 -->
+            <div class="table-wrap">
+              <table>
+                <tr><th>設備</th><th>點檢項目</th><th>頻率</th></tr>
+                <tr><td>電梯</td><td>運行正常、門板無卡滯、緊急電話通暢</td><td>每日</td></tr>
+                <tr><td>消防設備</td><td>滅火器壓力正常、灑水頭外觀完整</td><td>每週</td></tr>
+                <tr><td>排水系統</td><td>積水狀況、抽水機啟動正常</td><td>每日</td></tr>
+                <tr><td>監視系統</td><td>畫面清晰、錄影正常、時間正確</td><td>每日</td></tr>
+                <tr><td>公共照明</td><td>燈具亮度正常、感應器反應</td><td>每日</td></tr>
+                <tr><td>門禁系統</td><td>感應卡機、電鎖功能、對講機</td><td>每日</td></tr>
+                <tr><td>發電機</td><td>燃料充足、測試啟動</td><td>每月</td></tr>
+              </table>
+            </div>
+            <div class="notice info" style="margin-top:10px;"><div class="notice-icon">🔧</div><div>發現設備異常立即填寫「設備異常回報單」，通知廠商維修，並於值班日誌記錄。</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ TAB 4：緊急應變 ══ -->
+  <div class="tab-panel" id="ptab-emergency">
+    <div class="chapter-list">
+      <div class="chapter-card" id="pm6">
+        <div class="chapter-header" onclick="toggleChapter('pm6')">
+          <div class="chapter-num" style="background:#3a2510;color:#ffd28c;">🔥</div>
+          <div class="chapter-info"><h4>火警處理 SOP</h4><p>發現 → 廣播 → 疏散</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <div class="schedule-grid">
+              <div class="schedule-row"><div class="schedule-time">立即</div><div class="schedule-task">確認火警位置，啟動消防控制室警報</div></div>
+              <div class="schedule-row"><div class="schedule-time">30秒內</div><div class="schedule-task">廣播疏散指示，同步撥打 119 報案</div></div>
+              <div class="schedule-row"><div class="schedule-time">1分鐘內</div><div class="schedule-task">通知管委會主委，開啟消防安全門</div></div>
+              <div class="schedule-row"><div class="schedule-time">持續</div><div class="schedule-task">引導住戶走安全梯疏散，禁止使用電梯</div></div>
+              <div class="schedule-row"><div class="schedule-time">事後</div><div class="schedule-task">配合消防局調查，填寫事件報告24小時內完成</div></div>
+            </div>
+            <div class="notice danger" style="margin-top:10px;"><div class="notice-icon">⛔</div><div>未受訓人員禁止自行滅火，優先保護人員安全並引導疏散。</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-card" id="pm7">
+        <div class="chapter-header" onclick="toggleChapter('pm7')">
+          <div class="chapter-num" style="background:#3a2510;color:#ffd28c;">⚡</div>
+          <div class="chapter-info"><h4>電力中斷處理</h4><p>確認、聯絡、廣播</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <ul class="rule-list">
+              <li>確認是否全棟停電或局部停電，查看配電盤</li>
+              <li>確認緊急發電機已自動啟動，緊急照明正常</li>
+              <li>聯絡台電 1911 回報停電，詢問預估恢復時間</li>
+              <li>廣播通知住戶停電原因及預估復電時間</li>
+              <li>停電超過 2 小時，通知管委會主委</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-card" id="pm8">
+        <div class="chapter-header" onclick="toggleChapter('pm8')">
+          <div class="chapter-num" style="background:#3a2510;color:#ffd28c;">💧</div>
+          <div class="chapter-info"><h4>水管爆裂／漏水</h4><p>止水、搶修、損失記錄</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <ul class="rule-list">
+              <li>立即關閉該區域給水閥，確認範圍</li>
+              <li>通知水電維修廠商緊急到場搶修</li>
+              <li>協助受影響住戶確認損失並拍照存證</li>
+              <li>廣播通知受影響樓層停水原因</li>
+              <li>事後填寫「漏水事件報告」，附照片送管委會</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-card" id="pm9">
+        <div class="chapter-header" onclick="toggleChapter('pm9')">
+          <div class="chapter-num" style="background:#3a2510;color:#ffd28c;">🚨</div>
+          <div class="chapter-info"><h4>可疑人員入侵</h4><p>通報、監控、報警</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <ul class="rule-list">
+              <li>不得單獨攔截可疑人員，立即通報值班主任</li>
+              <li>調閱監視器確認入侵路徑及特徵描述</li>
+              <li>情況危急立即撥打 110 報警，告知位置與特徵</li>
+              <li>廣播警示住戶提高警覺，鎖好門戶</li>
+              <li>事後向管委會提交事件報告</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ TAB 5：交班紀錄 ══ -->
+  <div class="tab-panel" id="ptab-handover">
+    <div class="chapter-list">
+      <div class="chapter-card" id="pm10">
+        <div class="chapter-header" onclick="toggleChapter('pm10')">
+          <div class="chapter-num" style="background:#3a2510;color:#ffd28c;">1</div>
+          <div class="chapter-info"><h4>交班程序</h4><p>確認事項、當面交接</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <ul class="checklist">
+              <li class="done"><div class="check-box"></div><span>口頭說明當班重要事項及待處理事務</span></li>
+              <li class="done"><div class="check-box"></div><span>值班日誌完整填寫並由雙方簽名確認</span></li>
+              <li class="done"><div class="check-box"></div><span>清點鑰匙、門禁卡、對講機、手電筒等裝備</span></li>
+              <li><div class="check-box"></div><span>確認監視器、門禁系統正常運作</span></li>
+              <li><div class="check-box"></div><span>交接包裹代收紀錄，未取件物品清點</span></li>
+              <li><div class="check-box"></div><span>告知當班異常事件及處理狀態</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-card" id="pm11">
+        <div class="chapter-header" onclick="toggleChapter('pm11')">
+          <div class="chapter-num" style="background:#3a2510;color:#ffd28c;">2</div>
+          <div class="chapter-info"><h4>值班日誌填寫規範</h4><p>必填項目說明</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <div class="table-wrap">
+              <table>
+                <tr><th>項目</th><th>說明</th></tr>
+                <tr><td>班次資訊</td><td>日期、班別、值班人員姓名</td></tr>
+                <tr><td>訪客紀錄</td><td>姓名、目的、到訪及離去時間</td></tr>
+                <tr><td>包裹紀錄</td><td>件數、收件戶、簽收時間</td></tr>
+                <tr><td>設備狀況</td><td>異常設備名稱及處理狀態</td></tr>
+                <tr><td>住戶反映</td><td>投訴內容及回應方式</td></tr>
+                <tr><td>特殊事項</td><td>緊急事件、工程施工等</td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<nav class="bottom-nav">
+  <a class="bottom-nav-item" href="index.html"><span>🏠</span>首頁</a>
+  <a class="bottom-nav-item" href="ch01-rules.html"><span>📜</span>規約</a>
+  <a class="bottom-nav-item" href="ch03-residents.html"><span>👥</span>住戶</a>
+  <a class="bottom-nav-item active" href="ch04-property.html"><span>🔒</span>物業</a>
+  <a class="bottom-nav-item" href="ch05-cleaning.html"><span>🧹</span>清潔</a>
+  <a class="bottom-nav-item" href="contact.html"><span>📞</span>聯絡</a>
+</nav>
+
+<script src="shared.js"></script>
+</body>
+</html>

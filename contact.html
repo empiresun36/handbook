@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>緊急聯絡｜社區管理規劃手冊</title>
+<link rel="stylesheet" href="shared.css">
+</head>
+<body>
+
+<div class="top-bar">
+  <div>
+    <div class="top-bar-title">緊急聯絡資訊</div>
+    <div class="top-bar-sub">EMERGENCY CONTACTS</div>
+  </div>
+  <button class="menu-btn" onclick="openNav()" aria-label="選單"><span></span><span></span><span></span></button>
+</div>
+
+<div class="nav-overlay" id="navOverlay" onclick="closeNav()"></div>
+<nav class="nav-drawer" id="navDrawer">
+  <button class="nav-close" onclick="closeNav()">✕</button>
+  <div class="nav-header"><h1>社區管理規劃手冊</h1><p>Community Management Handbook</p></div>
+  <div class="nav-section-label">快速導覽</div>
+  <a class="nav-item" href="index.html"><div class="nav-item-icon">🏠</div>首頁總覽</a>
+  <a class="nav-item" href="ch01-rules.html"><div class="nav-item-icon">📜</div>第一篇：社區規約</a>
+  <a class="nav-item" href="ch02-committee.html"><div class="nav-item-icon">🏛️</div>第二篇：管委會手冊</a>
+  <a class="nav-item" href="ch03-residents.html"><div class="nav-item-icon">👥</div>第三篇：住戶生活公約</a>
+  <a class="nav-item" href="ch04-property.html"><div class="nav-item-icon">🔒</div>第四篇：物業管理準則</a>
+  <a class="nav-item" href="ch05-cleaning.html"><div class="nav-item-icon">🧹</div>第五篇：清潔管理準則</a>
+  <a class="nav-item active" href="contact.html"><div class="nav-item-icon">📞</div>緊急聯絡</a>
+  <div class="nav-section-label">版本資訊</div>
+  <div class="nav-item" style="cursor:default;"><div class="nav-item-icon">📅</div>最後更新：2025年1月</div>
+</nav>
+
+<main>
+  <div class="page-header" style="background: linear-gradient(135deg, #2a1a3a, #4a2a5c);">
+    <div class="page-header-sub" style="color:rgba(210,160,255,0.7);">EMERGENCY CONTACTS</div>
+    <h2>緊急聯絡資訊</h2>
+    <p>Emergency Contact Directory</p>
+  </div>
+
+  <!-- 緊急求救 -->
+  <div class="section-header" style="padding-top:20px;"><h3>緊急救災</h3><div class="section-line"></div></div>
+  <div class="contact-grid">
+    <!-- ★ 維護提示：修改 href="tel:XXX" 中的電話號碼 -->
+    <div class="contact-card">
+      <div class="contact-avatar" style="background:#fee2e2;">🚒</div>
+      <div class="contact-info"><h4>消防局（火災/急救）</h4><p>撥打後說明社區地址</p></div>
+      <div class="contact-actions"><a href="tel:119" class="contact-btn">📞</a></div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-avatar" style="background:#dbeafe;">🚓</div>
+      <div class="contact-info"><h4>警察局（治安）</h4><p>可疑人員、盜竊事件</p></div>
+      <div class="contact-actions"><a href="tel:110" class="contact-btn">📞</a></div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-avatar" style="background:#fef9c3;">🏥</div>
+      <div class="contact-info"><h4>救護車（緊急醫療）</h4><p>心臟病、中風、昏迷</p></div>
+      <div class="contact-actions"><a href="tel:119" class="contact-btn">📞</a></div>
+    </div>
+  </div>
+
+  <!-- 社區聯絡 -->
+  <div class="section-header"><h3>社區聯絡</h3><div class="section-line"></div></div>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <div class="contact-avatar" style="background:#d1fae5;">👨‍💼</div>
+      <div class="contact-info"><h4>管委會主任委員</h4><p>重要決策、重大投訴</p></div>
+      <div class="contact-actions"><a href="tel:+886-912-000-001" class="contact-btn">📞</a></div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-avatar" style="background:#e9d5ff;">🏢</div>
+      <div class="contact-info"><h4>管理室（24 小時）</h4><div style="font-size:12px;color:var(--text-muted);">一般問題、包裹、門禁</div></div>
+      <div class="contact-actions"><a href="tel:+886-2-2000-0001" class="contact-btn">📞</a></div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-avatar" style="background:#fce7f3;">🏛️</div>
+      <div class="contact-info"><h4>管委會財務委員</h4><p>管理費、財務問題</p></div>
+      <div class="contact-actions"><a href="tel:+886-912-000-002" class="contact-btn">📞</a></div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-avatar" style="background:#fef3c7;">🧹</div>
+      <div class="contact-info"><h4>清潔主管</h4><p>清潔問題、廢棄物</p></div>
+      <div class="contact-actions"><a href="tel:+886-912-000-003" class="contact-btn">📞</a></div>
+    </div>
+  </div>
+
+  <!-- 維修廠商 -->
+  <div class="section-header"><h3>維修廠商（緊急）</h3><div class="section-line"></div></div>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <div class="contact-avatar" style="background:#fce7f3;">🔧</div>
+      <div class="contact-info"><h4>水電維修</h4><p>管線爆裂、電氣故障</p></div>
+      <div class="contact-actions"><a href="tel:+886-2-2000-0010" class="contact-btn">📞</a></div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-avatar" style="background:#fef3c7;">🛗</div>
+      <div class="contact-info"><h4>電梯維修（24小時）</h4><p>困梯、異常停機</p></div>
+      <div class="contact-actions"><a href="tel:0800-000-100" class="contact-btn">📞</a></div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-avatar" style="background:#e0f2fe;">🛡️</div>
+      <div class="contact-info"><h4>消防設備維修</h4><p>滅火器、灑水頭</p></div>
+      <div class="contact-actions"><a href="tel:+886-2-2000-0020" class="contact-btn">📞</a></div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-avatar" style="background:#d1fae5;">🔐</div>
+      <div class="contact-info"><h4>門禁/監視系統</h4><p>設備故障、感應異常</p></div>
+      <div class="contact-actions"><a href="tel:+886-2-2000-0030" class="contact-btn">📞</a></div>
+    </div>
+  </div>
+
+  <!-- 公用事業 -->
+  <div class="section-header"><h3>公用事業</h3><div class="section-line"></div></div>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <div class="contact-avatar" style="background:#e0f2fe;">⚡</div>
+      <div class="contact-info"><h4>台灣電力</h4><p>停電報修、申請</p></div>
+      <div class="contact-actions"><a href="tel:1911" class="contact-btn">📞</a></div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-avatar" style="background:#d1fae5;">💧</div>
+      <div class="contact-info"><h4>台灣自來水</h4><p>停水報修</p></div>
+      <div class="contact-actions"><a href="tel:1910" class="contact-btn">📞</a></div>
+    </div>
+    <div class="contact-card">
+      <div class="contact-avatar" style="background:#fef3c7;">🔥</div>
+      <div class="contact-info"><h4>瓦斯公司（緊急）</h4><p>漏氣緊急處理</p></div>
+      <div class="contact-actions"><a href="tel:0800-368-000" class="contact-btn">📞</a></div>
+    </div>
+  </div>
+
+  <!-- 警示框 -->
+  <div style="margin: 24px 16px 0;">
+    <div class="notice danger">
+      <div class="notice-icon">💨</div>
+      <div>聞到瓦斯味：<strong>立即關瓦斯總開關</strong>、開窗通風、禁止使用任何電器，撤離後再撥打瓦斯公司緊急電話。</div>
+    </div>
+    <div class="notice info" style="margin-top:8px;">
+      <div class="notice-icon">🔒</div>
+      <div>深夜緊急事項請直接撥打管理室 24 小時電話，勿打擾管委會委員私人手機，除非是需立即決策的重大事件。</div>
+    </div>
+  </div>
+</main>
+
+<nav class="bottom-nav">
+  <a class="bottom-nav-item" href="index.html"><span>🏠</span>首頁</a>
+  <a class="bottom-nav-item" href="ch01-rules.html"><span>📜</span>規約</a>
+  <a class="bottom-nav-item" href="ch03-residents.html"><span>👥</span>住戶</a>
+  <a class="bottom-nav-item" href="ch04-property.html"><span>🔒</span>物業</a>
+  <a class="bottom-nav-item" href="ch05-cleaning.html"><span>🧹</span>清潔</a>
+  <a class="bottom-nav-item active" href="contact.html"><span>📞</span>聯絡</a>
+</nav>
+
+<script src="shared.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>社區管理規劃手冊</title>
+<link rel="stylesheet" href="shared.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div>
+    <div class="top-bar-title">社區管理規劃手冊</div>
+    <div class="top-bar-sub">COMMUNITY MANAGEMENT HANDBOOK</div>
+  </div>
+  <button class="menu-btn" onclick="openNav()" aria-label="選單">
+    <span></span><span></span><span></span>
+  </button>
+</div>
+
+<!-- DRAWER -->
+<div class="nav-overlay" id="navOverlay" onclick="closeNav()"></div>
+<nav class="nav-drawer" id="navDrawer">
+  <button class="nav-close" onclick="closeNav()">✕</button>
+  <div class="nav-header">
+    <h1>社區管理規劃手冊</h1>
+    <p>Community Management Handbook</p>
+  </div>
+  <div class="nav-section-label">快速導覽</div>
+  <a class="nav-item active" href="index.html"><div class="nav-item-icon">🏠</div>首頁總覽</a>
+  <a class="nav-item" href="ch01-rules.html"><div class="nav-item-icon">📜</div>第一篇：社區規約</a>
+  <a class="nav-item" href="ch02-committee.html"><div class="nav-item-icon">🏛️</div>第二篇：管委會手冊</a>
+  <a class="nav-item" href="ch03-residents.html"><div class="nav-item-icon">👥</div>第三篇：住戶生活公約</a>
+  <a class="nav-item" href="ch04-property.html"><div class="nav-item-icon">🔒</div>第四篇：物業管理準則</a>
+  <a class="nav-item" href="ch05-cleaning.html"><div class="nav-item-icon">🧹</div>第五篇：清潔管理準則</a>
+  <a class="nav-item" href="contact.html"><div class="nav-item-icon">📞</div>緊急聯絡</a>
+  <div class="nav-section-label">版本資訊</div>
+  <div class="nav-item" style="cursor:default;"><div class="nav-item-icon">📅</div>最後更新：2025年1月</div>
+</nav>
+
+<main>
+  <!-- HERO -->
+  <div class="hero" style="background: linear-gradient(165deg, #1a3a2a 0%, #2d5a42 60%, #4a7c5f 100%);">
+    <div class="hero-badge">2025 年版</div>
+    <h2>社區管理<br>規劃手冊</h2>
+    <p>本手冊適用於管委會、住戶、物業管理及清潔管理人員，請依職責查閱相關章節。</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="hero-stat-num">5</span><div class="hero-stat-label">手冊篇章</div></div>
+      <div class="hero-stat"><span class="hero-stat-num">4</span><div class="hero-stat-label">適用對象</div></div>
+      <div class="hero-stat"><span class="hero-stat-num">30+</span><div class="hero-stat-label">管理條文</div></div>
+    </div>
+  </div>
+
+  <!-- 依對象查閱 -->
+  <div class="section-header"><h3>依對象查閱</h3><div class="section-line"></div></div>
+  <div class="role-grid">
+    <a class="role-card committee" href="ch02-committee.html">
+      <div class="role-icon">🏛️</div>
+      <h4>管委會</h4>
+      <p>委員運作、財務管理、決策機制</p>
+    </a>
+    <a class="role-card resident" href="ch03-residents.html">
+      <div class="role-icon">🏡</div>
+      <h4>住戶</h4>
+      <p>生活公約、公設使用、訪客管理</p>
+    </a>
+    <a class="role-card property" href="ch04-property.html">
+      <div class="role-icon">🔐</div>
+      <h4>物業人員</h4>
+      <p>保全作業、設備管理、應變程序</p>
+    </a>
+    <a class="role-card cleaning" href="ch05-cleaning.html">
+      <div class="role-icon">🧹</div>
+      <h4>清潔人員</h4>
+      <p>清潔標準、作業排程、器材管理</p>
+    </a>
+  </div>
+
+  <!-- 手冊目錄 -->
+  <div class="section-header"><h3>手冊目錄</h3><div class="section-line"></div></div>
+  <div class="chapter-list">
+    <a class="index-chapter" href="ch01-rules.html">
+      <div class="chapter-num">一</div>
+      <div class="chapter-info"><h4>社區規約</h4><p>總則 · 大會 · 管委會 · 財務 · 違規</p></div>
+      <div class="chapter-arrow">›</div>
+    </a>
+    <a class="index-chapter" href="ch02-committee.html">
+      <div class="chapter-num">二</div>
+      <div class="chapter-info"><h4>管理委員會運作手冊</h4><p>組織架構 · 會議制度 · 廠商管理</p></div>
+      <div class="chapter-arrow">›</div>
+    </a>
+    <a class="index-chapter" href="ch03-residents.html">
+      <div class="chapter-num">三</div>
+      <div class="chapter-info"><h4>住戶生活公約</h4><p>噪音 · 停車 · 垃圾 · 寵物 · 門禁</p></div>
+      <div class="chapter-arrow">›</div>
+    </a>
+    <a class="index-chapter" href="ch04-property.html">
+      <div class="chapter-num">四</div>
+      <div class="chapter-info"><h4>物業管理人員作業準則</h4><p>門禁保全 · 設備管理 · 緊急應變</p></div>
+      <div class="chapter-arrow">›</div>
+    </a>
+    <a class="index-chapter" href="ch05-cleaning.html">
+      <div class="chapter-num">五</div>
+      <div class="chapter-info"><h4>清潔管理人員作業準則</h4><p>日常清潔 · 垃圾清運 · 器材管理</p></div>
+      <div class="chapter-arrow">›</div>
+    </a>
+    <a class="index-chapter" href="contact.html">
+      <div class="chapter-num" style="font-size:18px;">📞</div>
+      <div class="chapter-info"><h4>緊急聯絡資訊</h4><p>管委會 · 物業 · 公用事業 · 救災</p></div>
+      <div class="chapter-arrow">›</div>
+    </a>
+  </div>
+
+  <!-- 最新公告 -->
+  <div class="section-header"><h3>最新公告</h3><div class="section-line"></div></div>
+  <div style="padding: 0 16px;">
+    <!-- ★ 維護提示：新增公告只需複製下方 notice 區塊並修改文字 -->
+    <div class="notice info"><div class="notice-icon">📢</div><div>管委會定期大會訂於每月第一個星期六上午10時召開，請住戶踴躍參與。</div></div>
+    <div class="notice warn"><div class="notice-icon">⚠️</div><div>地下室B2停車場局部防水工程進行中（1/15–1/31），請勿停放B2-30至B2-50號車位。</div></div>
+    <div class="notice success"><div class="notice-icon">✅</div><div>交誼廳網路升級作業已完成，網速提升至1Gbps，歡迎使用。</div></div>
+  </div>
+</main>
+
+<!-- BOTTOM NAV -->
+<nav class="bottom-nav">
+  <a class="bottom-nav-item active" href="index.html" data-page="home"><span>🏠</span>首頁</a>
+  <a class="bottom-nav-item" href="ch01-rules.html" data-page="rules"><span>📜</span>規約</a>
+  <a class="bottom-nav-item" href="ch03-residents.html" data-page="residents"><span>👥</span>住戶</a>
+  <a class="bottom-nav-item" href="ch04-property.html" data-page="property"><span>🔒</span>物業</a>
+  <a class="bottom-nav-item" href="ch05-cleaning.html" data-page="cleaning"><span>🧹</span>清潔</a>
+  <a class="bottom-nav-item" href="contact.html" data-page="contact"><span>📞</span>聯絡</a>
+</nav>
+
+<script src="shared.js"></script>
+<script>markActiveNav('home');</script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>第二篇：管委會手冊｜社區管理規劃手冊</title>
+<link rel="stylesheet" href="shared.css">
+</head>
+<body>
+
+<div class="top-bar">
+  <div>
+    <div class="top-bar-title">第二篇：管委會手冊</div>
+    <div class="top-bar-sub">COMMITTEE OPERATION MANUAL</div>
+  </div>
+  <button class="menu-btn" onclick="openNav()" aria-label="選單"><span></span><span></span><span></span></button>
+</div>
+
+<div class="nav-overlay" id="navOverlay" onclick="closeNav()"></div>
+<nav class="nav-drawer" id="navDrawer">
+  <button class="nav-close" onclick="closeNav()">✕</button>
+  <div class="nav-header"><h1>社區管理規劃手冊</h1><p>Community Management Handbook</p></div>
+  <div class="nav-section-label">快速導覽</div>
+  <a class="nav-item" href="index.html"><div class="nav-item-icon">🏠</div>首頁總覽</a>
+  <a class="nav-item" href="ch01-rules.html"><div class="nav-item-icon">📜</div>第一篇：社區規約</a>
+  <a class="nav-item active" href="ch02-committee.html"><div class="nav-item-icon">🏛️</div>第二篇：管委會手冊</a>
+  <a class="nav-item" href="ch03-residents.html"><div class="nav-item-icon">👥</div>第三篇：住戶生活公約</a>
+  <a class="nav-item" href="ch04-property.html"><div class="nav-item-icon">🔒</div>第四篇：物業管理準則</a>
+  <a class="nav-item" href="ch05-cleaning.html"><div class="nav-item-icon">🧹</div>第五篇：清潔管理準則</a>
+  <a class="nav-item" href="contact.html"><div class="nav-item-icon">📞</div>緊急聯絡</a>
+  <div class="nav-section-label">版本資訊</div>
+  <div class="nav-item" style="cursor:default;"><div class="nav-item-icon">📅</div>最後更新：2025年1月</div>
+</nav>
+
+<main>
+  <div class="page-header" style="background: linear-gradient(135deg, #1c2e4a, #2a4a6b);">
+    <div class="page-header-sub" style="color:rgba(173,210,255,0.7);">CHAPTER 02</div>
+    <h2>管理委員會運作手冊</h2>
+    <p>Committee Operation Manual</p>
+  </div>
+
+  <!-- TABS -->
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="switchTab(this,'tab-org')">組織架構</button>
+    <button class="tab-btn" onclick="switchTab(this,'tab-meeting')">會議制度</button>
+    <button class="tab-btn" onclick="switchTab(this,'tab-finance')">財務作業</button>
+    <button class="tab-btn" onclick="switchTab(this,'tab-vendor')">廠商管理</button>
+    <button class="tab-btn" onclick="switchTab(this,'tab-docs')">文件資訊</button>
+  </div>
+
+  <!-- ══ TAB 1：組織架構 ══ -->
+  <div class="tab-panel active" id="tab-org">
+    <div class="notice info" style="margin-top:8px;"><div class="notice-icon">🏛️</div><div>管委會由全體區分所有權人選任，對社區全體住戶負責。任期兩年，得連選連任一次。</div></div>
+    <div class="chapter-list">
+      <div class="chapter-card" id="org1">
+        <div class="chapter-header" onclick="toggleChapter('org1')">
+          <div class="chapter-num" style="background:#1c2e4a;color:#add2ff;">1</div>
+          <div class="chapter-info"><h4>委員職務說明</h4><p>各職務權責一覽</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <!-- ★ 維護提示：修改表格內容即可更新職務說明 -->
+            <div class="table-wrap">
+              <table>
+                <tr><th>職務</th><th>人數</th><th>主要職責</th></tr>
+                <tr><td>主任委員</td><td>1</td><td>召集會議、對外代表、執行決議</td></tr>
+                <tr><td>副主任委員</td><td>1</td><td>輔佐主委、代理主委職務</td></tr>
+                <tr><td>財務委員</td><td>1</td><td>管理帳務、核銷費用、財務報告</td></tr>
+                <tr><td>監察委員</td><td>1–2</td><td>監督財務、審查決議執行</td></tr>
+                <tr><td>一般委員</td><td>3–5</td><td>參與決議、分擔業務</td></tr>
+              </table>
+            </div>
+            <div class="notice warn" style="margin-top:12px;"><div class="notice-icon">⚠️</div><div>任職期間不得與社區廠商有利害關係，違者應主動迴避或辭任。</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-card" id="org2">
+        <div class="chapter-header" onclick="toggleChapter('org2')">
+          <div class="chapter-num" style="background:#1c2e4a;color:#add2ff;">2</div>
+          <div class="chapter-info"><h4>授權金額上限</h4><p>各層級決策授權</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <div class="table-wrap">
+              <table>
+                <tr><th>授權層級</th><th>金額上限</th></tr>
+                <tr><td>物業主任（日常緊急）</td><td>NT$5,000 以下</td></tr>
+                <tr><td>主任委員</td><td>NT$30,000 以下</td></tr>
+                <tr><td>管委會議決</td><td>NT$30,001 – 200,000</td></tr>
+                <tr><td>區分所有權人大會</td><td>超過 NT$200,000</td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ TAB 2：會議制度 ══ -->
+  <div class="tab-panel" id="tab-meeting">
+    <div class="chapter-list">
+      <div class="chapter-card" id="mtg1">
+        <div class="chapter-header" onclick="toggleChapter('mtg1')">
+          <div class="chapter-num" style="background:#1c2e4a;color:#add2ff;">1</div>
+          <div class="chapter-info"><h4>月例會標準流程</h4><p>召集、議程、紀錄、追蹤</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <div class="schedule-grid">
+              <div class="schedule-row"><div class="schedule-time">7天前</div><div class="schedule-task">發出開會通知及議程草案，附上前次會議紀錄</div></div>
+              <div class="schedule-row"><div class="schedule-time">3天前</div><div class="schedule-task">確認出席人數，準備相關資料及簡報</div></div>
+              <div class="schedule-row"><div class="schedule-time">會議當天</div><div class="schedule-task">主席宣布開會 → 確認前次決議追蹤 → 本次議案討論 → 臨時動議 → 散會</div></div>
+              <div class="schedule-row"><div class="schedule-time">3日內</div><div class="schedule-task">完成會議紀錄，公告於公告欄及社區平台</div></div>
+            </div>
+            <div class="notice info" style="margin-top:10px;"><div class="notice-icon">📋</div><div>月例會原則上每月第一個星期六上午 10:00 舉行，主委得視需要調整日期。</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-card" id="mtg2">
+        <div class="chapter-header" onclick="toggleChapter('mtg2')">
+          <div class="chapter-num" style="background:#1c2e4a;color:#add2ff;">2</div>
+          <div class="chapter-info"><h4>決議事項追蹤</h4><p>責任分配與期限管理</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <ul class="rule-list">
+              <li>每項決議應指定負責委員及完成期限</li>
+              <li>下次例會前需回報執行進度</li>
+              <li>逾期未執行者，主委應瞭解原因並重新排程</li>
+              <li>決議追蹤表由物業行政人員維護，每月更新</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ TAB 3：財務作業 ══ -->
+  <div class="tab-panel" id="tab-finance">
+    <div class="chapter-list">
+      <div class="chapter-card" id="fin1">
+        <div class="chapter-header" onclick="toggleChapter('fin1')">
+          <div class="chapter-num" style="background:#1c2e4a;color:#add2ff;">1</div>
+          <div class="chapter-info"><h4>費用請款核銷程序</h4><p>請款 → 審核 → 撥款</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <div class="schedule-grid">
+              <div class="schedule-row"><div class="schedule-time">步驟 1</div><div class="schedule-task">廠商提出請款單及統一發票（二聯或三聯式）</div></div>
+              <div class="schedule-row"><div class="schedule-time">步驟 2</div><div class="schedule-task">物業主任審核：金額、品項與合約相符</div></div>
+              <div class="schedule-row"><div class="schedule-time">步驟 3</div><div class="schedule-task">財務委員核准，超過授權上限須主委或委員會議同意</div></div>
+              <div class="schedule-row"><div class="schedule-time">步驟 4</div><div class="schedule-task">七個工作日內完成匯款，憑證存檔五年備查</div></div>
+            </div>
+            <div class="notice warn" style="margin-top:10px;"><div class="notice-icon">⚠️</div><div>未附發票、收據之請款一律不予受理。緊急採購得事後補件，但須附主委書面同意備忘錄。</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-card" id="fin2">
+        <div class="chapter-header" onclick="toggleChapter('fin2')">
+          <div class="chapter-num" style="background:#1c2e4a;color:#add2ff;">2</div>
+          <div class="chapter-info"><h4>年度預算編製</h4><p>預算週期與審議流程</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <ul class="rule-list">
+              <li>每年 10 月起由財務委員草擬次年度預算草案</li>
+              <li>11 月提管委會例會討論修正</li>
+              <li>12 月送區分所有權人大會審議通過</li>
+              <li>次年 1 月 1 日起依核定預算執行</li>
+              <li>預算執行情形每季公告，重大超支需提臨時大會</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ TAB 4：廠商管理 ══ -->
+  <div class="tab-panel" id="tab-vendor">
+    <div class="chapter-list">
+      <div class="chapter-card" id="vd1">
+        <div class="chapter-header" onclick="toggleChapter('vd1')">
+          <div class="chapter-num" style="background:#1c2e4a;color:#add2ff;">1</div>
+          <div class="chapter-info"><h4>廠商評選標準</h4><p>比價、評分、評鑑</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <div class="table-wrap">
+              <table>
+                <tr><th>評估項目</th><th>權重</th></tr>
+                <tr><td>報價合理性</td><td>30%</td></tr>
+                <tr><td>品牌與資歷</td><td>25%</td></tr>
+                <tr><td>技術能力與服務</td><td>25%</td></tr>
+                <tr><td>過往評鑑紀錄</td><td>20%</td></tr>
+              </table>
+            </div>
+            <ul class="rule-list" style="margin-top:10px;">
+              <li>10萬元以上工程須取得三家以上比價單</li>
+              <li>簽約前須審查廠商資格、保險及工安紀錄</li>
+              <li>工程完成後進行驗收並評分，存入廠商評鑑資料庫</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-card" id="vd2">
+        <div class="chapter-header" onclick="toggleChapter('vd2')">
+          <div class="chapter-num" style="background:#1c2e4a;color:#add2ff;">2</div>
+          <div class="chapter-info"><h4>合約管理</h4><p>簽訂、保管、到期追蹤</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <ul class="rule-list">
+              <li>所有合約須由主委代表管委會簽署</li>
+              <li>合約正本由物業行政人員存檔，電子檔備份</li>
+              <li>合約到期前三個月主動通知管委會評估續約或重新招標</li>
+              <li>重要設備保固書及原廠合約一併存檔</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ TAB 5：文件資訊 ══ -->
+  <div class="tab-panel" id="tab-docs">
+    <div class="chapter-list">
+      <div class="chapter-card" id="doc1">
+        <div class="chapter-header" onclick="toggleChapter('doc1')">
+          <div class="chapter-num" style="background:#1c2e4a;color:#add2ff;">1</div>
+          <div class="chapter-info"><h4>公告與通知管理</h4><p>公告欄、Line 群組、App</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <ul class="rule-list">
+              <li>所有對外公告須經主委或副主委核准後張貼</li>
+              <li>公告欄公告效期最長三個月，逾期由物業撤除</li>
+              <li>緊急通知可透過 Line 群組或社區 App 推播</li>
+              <li>個人私事廣告不得張貼於公告欄</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-card" id="doc2">
+        <div class="chapter-header" onclick="toggleChapter('doc2')">
+          <div class="chapter-num" style="background:#1c2e4a;color:#add2ff;">2</div>
+          <div class="chapter-info"><h4>住戶個資保護</h4><p>蒐集、使用、安全管理</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <ul class="rule-list">
+              <li>住戶個資（姓名、電話、車牌）僅供社區管理使用</li>
+              <li>不得提供給第三方或廠商，違者負法律責任</li>
+              <li>管委會委員離任後不得持有任何住戶個資</li>
+              <li>監視器影像保存 30 天，僅供安全目的調閱</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<nav class="bottom-nav">
+  <a class="bottom-nav-item" href="index.html"><span>🏠</span>首頁</a>
+  <a class="bottom-nav-item" href="ch01-rules.html"><span>📜</span>規約</a>
+  <a class="bottom-nav-item" href="ch03-residents.html"><span>👥</span>住戶</a>
+  <a class="bottom-nav-item" href="ch04-property.html"><span>🔒</span>物業</a>
+  <a class="bottom-nav-item" href="ch05-cleaning.html"><span>🧹</span>清潔</a>
+  <a class="bottom-nav-item" href="contact.html"><span>📞</span>聯絡</a>
+</nav>
+
+<script src="shared.js"></script>
+</body>
+</html>
