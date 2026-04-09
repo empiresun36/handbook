@@ -54,6 +54,7 @@
     <button class="tab-btn" onclick="switchTab(this,'ptab-equipment')">設施管理</button>
     <button class="tab-btn" onclick="switchTab(this,'ptab-emergency')">緊急應變</button>
     <button class="tab-btn" onclick="switchTab(this,'ptab-handover')">交班紀錄</button>
+    <button class="tab-btn" onclick="switchTab(this,'ptab-contract')">保全合約</button>
   </div>
 
   <!-- ══ TAB 1：服勤規範 ══ -->
@@ -301,6 +302,273 @@
       </div>
     </div>
   </div>
+
+  <!-- ══ TAB 6：保全合約 ══ -->
+  <div class="tab-panel" id="ptab-contract">
+
+    <div class="notice info" style="margin-top:8px;">
+      <div class="notice-icon">📋</div>
+      <div>本章節為太陽帝國社區物業保全廠商合約條款規範，涵蓋人員穩定、扣款標準、廠商評選及稽核機制，建議列為合約附件正式執行。</div>
+    </div>
+
+    <div class="chapter-list">
+
+      <!-- 人員穩定條款 -->
+      <div class="chapter-card" id="ct1">
+        <div class="chapter-header" onclick="toggleChapter('ct1')">
+          <div class="chapter-num" style="background:#3a2510;color:#ffd28c;">一</div>
+          <div class="chapter-info"><h4>人員穩定條款</h4><p>流動率上限、服務期間、尖峰崗位</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <ul class="rule-list">
+              <li>廠商應維持派駐人員之穩定性，<strong>每月更換率不得超過 20%</strong></li>
+              <li>單一保全人員服務期間<strong>不得低於 30 日</strong>（經管委會同意者除外）</li>
+              <li>尖峰時段（夜班、大廳）不得任意更換人員</li>
+              <li>大廳及車道關鍵崗位建議採<strong>固定人員制</strong>，並設雙保全備援</li>
+            </ul>
+            <div class="notice warn" style="margin-top:8px;">
+              <div class="notice-icon">⚠️</div>
+              <div>人員流動是業界常態，但服務品質不能跟著流動。穩定是服務品質的一部分，不是額外要求。</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 更換與通報條款 -->
+      <div class="chapter-card" id="ct2">
+        <div class="chapter-header" onclick="toggleChapter('ct2')">
+          <div class="chapter-num" style="background:#3a2510;color:#ffd28c;">二</div>
+          <div class="chapter-info"><h4>更換與通報條款</h4><p>事前通報、緊急更換、新進資料</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <div class="schedule-grid">
+              <div class="schedule-row"><div class="schedule-time">一般更換</div><div class="schedule-task">須於 3 日前通知管理單位，說明更換原因及新進人員資料</div></div>
+              <div class="schedule-row"><div class="schedule-time">緊急更換</div><div class="schedule-task">應於當日補行通報並說明原因，不得事後才告知</div></div>
+              <div class="schedule-row"><div class="schedule-time">新進人員</div><div class="schedule-task">須提供：基本資料、經歷證明、相關證照（如有）</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 交接制度 -->
+      <div class="chapter-card" id="ct3">
+        <div class="chapter-header" onclick="toggleChapter('ct3')">
+          <div class="chapter-num" style="background:#3a2510;color:#ffd28c;">三</div>
+          <div class="chapter-info"><h4>交接制度（關鍵條款）</h4><p>重疊交接、交接內容、未完成視為違約</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <ul class="rule-list">
+              <li>新舊人員須完成<strong>至少一班重疊交接</strong></li>
+              <li>交接內容必須涵蓋：車道設備（ETC、門禁）、緊急應變流程 SOP、社區特殊規定</li>
+              <li><strong>未完成交接視為未履約</strong>，得依扣款標準處理</li>
+            </ul>
+            <div class="notice danger" style="margin-top:8px;">
+              <div class="notice-icon">🚫</div>
+              <div>沒有扣款條款的管理，等於沒有管理。未完成交接扣款 NT$1,000–2,000/次。</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 教育訓練 -->
+      <div class="chapter-card" id="ct4">
+        <div class="chapter-header" onclick="toggleChapter('ct4')">
+          <div class="chapter-num" style="background:#3a2510;color:#ffd28c;">四</div>
+          <div class="chapter-info"><h4>教育訓練條款</h4><p>職前訓練、在職訓練、管委會要求</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <ul class="rule-list">
+              <li>廠商須提供<strong>職前訓練</strong>與<strong>在職訓練</strong>，並保存訓練紀錄</li>
+              <li>至少<strong>每季一次</strong>教育訓練，紀錄提交管委會備查</li>
+              <li>管委會得要求專業訓練（消防、設備操作、緊急應變等）</li>
+              <li>未配合訓練扣款 NT$1,000/次</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPI服務品質 -->
+      <div class="chapter-card" id="ct5">
+        <div class="chapter-header" onclick="toggleChapter('ct5')">
+          <div class="chapter-num" style="background:#3a2510;color:#ffd28c;">五</div>
+          <div class="chapter-info"><h4>服務品質條款（KPI）</h4><p>到勤率、投訴率、設備操作</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <div class="table-wrap">
+              <table>
+                <tr><th>KPI 指標</th><th>標準</th></tr>
+                <tr><td>準時到勤率</td><td>98% 以上</td></tr>
+                <tr><td>住戶投訴率</td><td>低於合理範圍（每月不超過 2 件重大投訴）</td></tr>
+                <tr><td>設備操作正確率</td><td>95% 以上</td></tr>
+              </table>
+            </div>
+            <ul class="rule-list" style="margin-top:10px;">
+              <li>管委會每月統計 KPI 數據，作為合約續約評估依據</li>
+              <li>連續兩個月 KPI 未達標，廠商須提出改善計畫</li>
+              <li>連續三個月未達標，得啟動換約程序</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 不適任更換權 -->
+      <div class="chapter-card" id="ct6">
+        <div class="chapter-header" onclick="toggleChapter('ct6')">
+          <div class="chapter-num" style="background:#3a2510;color:#ffd28c;">六</div>
+          <div class="chapter-info"><h4>不適任更換權</h4><p>管委會認定、廠商不得拒絕</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <ul class="rule-list">
+              <li>管委會得認定人員不適任並要求廠商更換</li>
+              <li>廠商<strong>不得拒絕或拖延</strong>，須於接獲通知 3 日內完成更換</li>
+              <li>不適任認定標準：態度不佳、設備操作失誤、違規違紀、住戶重大投訴</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 扣款標準表 -->
+      <div class="chapter-card" id="ct7">
+        <div class="chapter-header" onclick="toggleChapter('ct7')">
+          <div class="chapter-num" style="background:#3a2510;color:#ffd28c;">七</div>
+          <div class="chapter-info"><h4>違約扣款標準表</h4><p>建議列為合約附件直接執行</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <div class="table-wrap">
+              <table>
+                <tr><th>違規事項</th><th>扣款金額</th></tr>
+                <tr><td>未事前通報更換人員</td><td>NT$500–1,000／次</td></tr>
+                <tr><td>未完成新舊人員交接</td><td>NT$1,000–2,000／次</td></tr>
+                <tr><td>人員未到勤</td><td>當日全額扣款</td></tr>
+                <tr><td>遲到或早退</td><td>NT$200–500／次</td></tr>
+                <tr><td>不熟悉設備操作</td><td>NT$500–1,000／次</td></tr>
+                <tr><td>發生重大住戶投訴</td><td>NT$1,000–3,000／次</td></tr>
+                <tr><td>每月更換率超過 20%</td><td>NT$3,000–10,000</td></tr>
+                <tr><td>未配合教育訓練</td><td>NT$1,000／次</td></tr>
+              </table>
+            </div>
+            <div class="notice danger" style="margin-top:10px;">
+              <div class="notice-icon">⚠️</div>
+              <div>累積三次違規，得視為重大違約，管委會得終止契約並啟動廠商評選。</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 廠商評選機制 -->
+      <div class="chapter-card" id="ct8">
+        <div class="chapter-header" onclick="toggleChapter('ct8')">
+          <div class="chapter-num" style="background:#3a2510;color:#ffd28c;">八</div>
+          <div class="chapter-info"><h4>廠商評選評分表（100分制）</h4><p>換廠商時使用</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <div class="table-wrap">
+              <table>
+                <tr><th>評估項目</th><th>比重</th><th>評分重點</th></tr>
+                <tr><td>價格</td><td>20%</td><td>合理即可，非最低價優先</td></tr>
+                <tr><td>人員穩定度</td><td>25%</td><td>流動率、留任率</td></tr>
+                <tr><td>管理制度</td><td>20%</td><td>教育訓練 SOP 完整性</td></tr>
+                <tr><td>經驗實績</td><td>15%</td><td>類似規模社區服務經驗</td></tr>
+                <tr><td>緊急應變能力</td><td>10%</td><td>事故處理流程</td></tr>
+                <tr><td>簡報表現</td><td>10%</td><td>專業度與溝通能力</td></tr>
+              </table>
+            </div>
+            <div class="article-item" style="margin-top:12px;">
+              <div class="article-title">面試廠商必問關鍵問題</div>
+              <ul class="rule-list">
+                <li>你們平均人員留任多久？</li>
+                <li>如何降低人員流動率？</li>
+                <li>新人多久可以獨立上手？</li>
+                <li>是否有固定人員池（備援機制）？</li>
+                <li>遇到住戶衝突時如何處理？</li>
+              </ul>
+            </div>
+            <div class="notice warn" style="margin-top:8px;">
+              <div class="notice-icon">💡</div>
+              <div>若廠商答不出以上問題，表示管理制度不完整，建議直接淘汰。</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 稽核SOP -->
+      <div class="chapter-card" id="ct9">
+        <div class="chapter-header" onclick="toggleChapter('ct9')">
+          <div class="chapter-num" style="background:#3a2510;color:#ffd28c;">九</div>
+          <div class="chapter-info"><h4>現場稽核 SOP</h4><p>管委會志工每週巡檢（5分鐘版）</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <div class="table-wrap">
+              <table>
+                <tr><th>人員面</th><th>專業面</th><th>態度面</th></tr>
+                <tr><td>是否為名冊登記人員</td><td>是否會操作 ETC 及門禁</td><td>交接簿是否完整填寫</td></tr>
+                <tr><td>是否準時在崗</td><td>是否知道緊急應變流程</td><td>有無異常事件紀錄</td></tr>
+              </table>
+            </div>
+            <div class="notice info" style="margin-top:10px;">
+              <div class="notice-icon">💡</div>
+              <div>可直接詢問保全：「如果社區停電，您的處理步驟是什麼？」——答不出來即為不熟悉 SOP，列為待改善。</div>
+            </div>
+            <div class="article-item" style="margin-top:10px;">
+              <div class="article-title">稽核結果評定</div>
+              <ul class="rule-list">
+                <li><strong>合格</strong>：三面向均符合標準</li>
+                <li><strong>待改善</strong>：一項未達標，書面通知廠商限期改善</li>
+                <li><strong>不合格</strong>：兩項以上未達標，啟動不適任更換程序</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 規約條文 -->
+      <div class="chapter-card" id="ct10">
+        <div class="chapter-header" onclick="toggleChapter('ct10')">
+          <div class="chapter-num" style="background:#3a2510;color:#ffd28c;">規</div>
+          <div class="chapter-info"><h4>規約條文版</h4><p>第○條　物業保全人員管理機制</p></div>
+          <div class="chapter-arrow">›</div>
+        </div>
+        <div class="chapter-body">
+          <div class="chapter-content">
+            <div class="article-item">
+              <div class="article-title"><span class="article-num">第○條</span>物業保全人員管理機制</div>
+              <ul class="rule-list">
+                <li>為確保社區安全及服務品質，物業服務廠商應維持人員穩定，不得頻繁更換</li>
+                <li>保全人員更換應符合下列規定：（一）應事前通知管委會或管理單位；（二）應完成工作交接程序；（三）新進人員應具備基本職前訓練</li>
+                <li>保全人員應建立名冊，並定期更新</li>
+                <li>如保全人員有不適任情形，管理委員得要求更換</li>
+                <li>廠商如未依約維持人員穩定或未完成交接，得依契約規定辦理扣款或其他處置</li>
+                <li>本條相關細節，得由管委會另訂管理辦法</li>
+              </ul>
+            </div>
+            <div class="notice success" style="margin-top:10px;">
+              <div class="notice-icon">✅</div>
+              <div>本條文建議納入社區規約或管理辦法，具法律約束力，並作為廠商合約附件執行。</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div><!-- end ptab-contract -->
 
 </main>
 
