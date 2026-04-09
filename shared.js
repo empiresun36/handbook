@@ -34,6 +34,72 @@ function markActiveNav(pageId) {
   });
 }
 
+
+/* ══════════════════════════════════════
+   Android PWA 安裝引導橫幅
+   Chrome 觸發 beforeinstallprompt 時顯示
+══════════════════════════════════════ */
+let deferredInstallPrompt = null;
+
+(function injectInstallBanner() {
+  const banner = document.createElement('div');
+  banner.id = 'install-banner';
+  banner.innerHTML = `
+    <div id="install-banner-inner">
+      <div id="install-banner-icon">📱</div>
+      <div id="install-banner-text">
+        <strong>加入主畫面</strong>
+        <span>像 App 一樣快速開啟，支援離線瀏覽</span>
+      </div>
+      <button id="install-btn" onclick="installPWA()">安裝</button>
+      <button id="install-close" onclick="dismissBanner()">✕</button>
+    </div>`;
+  document.body.appendChild(banner);
+})();
+
+(function injectInstallStyle() {
+  const s = document.createElement('style');
+  s.textContent = [
+    '#install-banner{position:fixed;bottom:calc(64px + env(safe-area-inset-bottom,0px));left:12px;right:12px;z-index:199;transform:translateY(120%);transition:transform .4s cubic-bezier(.4,0,.2,1);pointer-events:none}',
+    '#install-banner.show{transform:translateY(0);pointer-events:all}',
+    '#install-banner-inner{background:#fff;border:1px solid #e0ddd5;border-radius:16px;padding:12px 14px;display:flex;align-items:center;gap:10px;box-shadow:0 4px 24px rgba(26,58,42,.18)}',
+    '#install-banner-icon{font-size:28px;flex-shrink:0}',
+    '#install-banner-text{flex:1;display:flex;flex-direction:column;gap:1px}',
+    '#install-banner-text strong{font-size:14px;color:#1a3a2a;font-family:"Noto Sans TC",sans-serif;font-weight:500}',
+    '#install-banner-text span{font-size:11px;color:#9a9a90;font-family:"Noto Sans TC",sans-serif}',
+    '#install-btn{background:#1a3a2a;color:#e8d5a8;border:none;border-radius:10px;padding:8px 14px;font-size:13px;font-weight:500;font-family:"Noto Sans TC",sans-serif;cursor:pointer;flex-shrink:0}',
+    '#install-btn:hover{background:#2d5a42}',
+    '#install-close{background:none;border:none;color:#9a9a90;font-size:16px;cursor:pointer;padding:4px;flex-shrink:0}'
+  ].join('');
+  document.head.appendChild(s);
+})();
+
+window.addEventListener('beforeinstallprompt', e => {
+  e.preventDefault();
+  deferredInstallPrompt = e;
+  setTimeout(() => {
+    const b = document.getElementById('install-banner');
+    if (b) b.classList.add('show');
+  }, 2000);
+});
+
+function installPWA() {
+  dismissBanner();
+  if (!deferredInstallPrompt) return;
+  deferredInstallPrompt.prompt();
+  deferredInstallPrompt.userChoice.then(() => { deferredInstallPrompt = null; });
+}
+
+function dismissBanner() {
+  const b = document.getElementById('install-banner');
+  if (b) b.classList.remove('show');
+}
+
+window.addEventListener('appinstalled', () => {
+  dismissBanner();
+  deferredInstallPrompt = null;
+});
+
 /* ══════════════════════════════════════
    背景音樂播放器
    ── 使用 Pixabay 免費鋼琴音樂（CC0）──

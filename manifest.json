@@ -1,25 +1,65 @@
 {
   "name": "社區管理規劃手冊",
   "short_name": "社區手冊",
-  "description": "社區管理規劃手冊 - 管委會、住戶、物業、清潔",
-  "start_url": "./index.html",
+  "description": "社區管理規劃手冊 - 管委會、住戶、物業、清潔人員適用",
+  "start_url": "./index.html?source=pwa",
+  "scope": "./",
   "display": "standalone",
-  "orientation": "portrait",
+  "orientation": "portrait-primary",
   "background_color": "#1a3a2a",
   "theme_color": "#1a3a2a",
   "lang": "zh-TW",
+  "dir": "ltr",
+  "categories": ["productivity", "lifestyle"],
+
   "icons": [
     {
       "src": "icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "icon-192-maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
     },
     {
       "src": "icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+
+  "shortcuts": [
+    {
+      "name": "住戶生活公約",
+      "short_name": "住戶公約",
+      "description": "查閱住戶生活規範",
+      "url": "./ch03-residents.html?source=shortcut",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "緊急聯絡",
+      "short_name": "緊急聯絡",
+      "description": "查看緊急電話",
+      "url": "./contact.html?source=shortcut",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "物業管理準則",
+      "short_name": "物業準則",
+      "description": "物業人員作業準則",
+      "url": "./ch04-property.html?source=shortcut",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
     }
   ]
 }
