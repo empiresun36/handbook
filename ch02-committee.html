@@ -51,8 +51,7 @@
   <!-- TABS -->
   <div class="tab-bar">
     <button class="tab-btn active" onclick="switchTab(this,'tab-org')">組織架構</button>
-    <button class="tab-btn" onclick="switchTab(this,'tab-meeting')">月例會</button>
-    <button class="tab-btn" onclick="switchTab(this,'tab-agm')">區權大會</button>
+    <button class="tab-btn" onclick="switchTab(this,'tab-meeting')">會議制度</button>
     <button class="tab-btn" onclick="switchTab(this,'tab-finance')">財務作業</button>
     <button class="tab-btn" onclick="switchTab(this,'tab-vendor')">廠商管理</button>
     <button class="tab-btn" onclick="switchTab(this,'tab-docs')">文件資訊</button>
@@ -108,7 +107,7 @@
     </div>
   </div>
 
-  <!-- ══ TAB 2：月例會 ══ -->
+  <!-- ══ TAB 2：會議制度 ══ -->
   <div class="tab-panel" id="tab-meeting">
     <div class="chapter-list">
       <div class="chapter-card" id="mtg1">
@@ -149,242 +148,7 @@
     </div>
   </div>
 
-  <!-- ══ TAB 3：區分所有權人大會 ══ -->
-  <div class="tab-panel" id="tab-agm">
-
-    <div class="notice info" style="margin-top:8px;">
-      <div class="notice-icon">🏛️</div>
-      <div>區分所有權人大會為社區最高決策機構，管委會負責籌備與執行，所有決議對全體住戶具約束力。</div>
-    </div>
-
-    <div class="chapter-list">
-
-      <!-- 大會類型 -->
-      <div class="chapter-card" id="agm0">
-        <div class="chapter-header" onclick="toggleChapter('agm0')">
-          <div class="chapter-num" style="background:#1c2e4a;color:#add2ff;">類</div>
-          <div class="chapter-info"><h4>大會類型與召開時機</h4><p>定期大會 vs 臨時大會</p></div>
-          <div class="chapter-arrow">›</div>
-        </div>
-        <div class="chapter-body">
-          <div class="chapter-content">
-            <div class="table-wrap">
-              <table>
-                <tr><th>類型</th><th>召開時機</th><th>召集人</th></tr>
-                <tr><td>定期大會</td><td>每年至少一次，通常於年底或年初</td><td>主任委員</td></tr>
-                <tr><td>臨時大會</td><td>有重大事項需緊急決議時</td><td>主委 或 1/5 以上區權人連署</td></tr>
-              </table>
-            </div>
-            <div class="notice warn" style="margin-top:10px;">
-              <div class="notice-icon">⚠️</div>
-              <div>臨時大會申請須以書面提出，說明召開事由，管委會應於接獲申請後 30 日內召開。</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 籌備時程 -->
-      <div class="chapter-card" id="agm1">
-        <div class="chapter-header" onclick="toggleChapter('agm1')">
-          <div class="chapter-num" style="background:#1c2e4a;color:#add2ff;">備</div>
-          <div class="chapter-info"><h4>大會籌備時程</h4><p>會前 60 天起的準備工作</p></div>
-          <div class="chapter-arrow">›</div>
-        </div>
-        <div class="chapter-body">
-          <div class="chapter-content">
-            <div class="schedule-grid">
-              <div class="schedule-row">
-                <div class="schedule-time">60 天前</div>
-                <div class="schedule-task">管委會決議大會日期、地點，指定籌備小組負責人</div>
-              </div>
-              <div class="schedule-row">
-                <div class="schedule-time">45 天前</div>
-                <div class="schedule-task">確認議案清單，財務委員完成年度決算報告初稿</div>
-              </div>
-              <div class="schedule-row">
-                <div class="schedule-time">30 天前</div>
-                <div class="schedule-task">寄發「大會召開通知書」給全體區分所有權人（掛號信或簽收）</div>
-              </div>
-              <div class="schedule-row">
-                <div class="schedule-time">15 天前</div>
-                <div class="schedule-task">公告議程、決算報告、預算草案於公告欄及社區 App</div>
-              </div>
-              <div class="schedule-row">
-                <div class="schedule-time">7 天前</div>
-                <div class="schedule-task">確認場地佈置、計票人員、攝影錄影設備</div>
-              </div>
-              <div class="schedule-row">
-                <div class="schedule-time">3 天前</div>
-                <div class="schedule-task">彙整書面委託書、確認出席人數是否達法定門檻</div>
-              </div>
-              <div class="schedule-row">
-                <div class="schedule-time">會議當天</div>
-                <div class="schedule-task">報到、點名計算出席比例、宣布開會、依議程進行</div>
-              </div>
-              <div class="schedule-row">
-                <div class="schedule-time">7 天內</div>
-                <div class="schedule-task">完成會議紀錄，公告並函送各區權人及主管機關</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 出席與委託 -->
-      <div class="chapter-card" id="agm2">
-        <div class="chapter-header" onclick="toggleChapter('agm2')">
-          <div class="chapter-num" style="background:#1c2e4a;color:#add2ff;">席</div>
-          <div class="chapter-info"><h4>出席與委託代理規則</h4><p>到場出席、書面委託、法定人數</p></div>
-          <div class="chapter-arrow">›</div>
-        </div>
-        <div class="chapter-body">
-          <div class="chapter-content">
-            <div class="article-item">
-              <div class="article-title">出席方式</div>
-              <ul class="rule-list">
-                <li>區分所有權人得親自出席或以書面委託代理人出席</li>
-                <li>每一區分所有權人以委託一人為限</li>
-                <li>受委託人須攜帶委託書正本於報到時繳交</li>
-                <li>管委會委員不得受委託代理其他區權人出席</li>
-              </ul>
-            </div>
-            <div class="article-item">
-              <div class="article-title">法定出席門檻</div>
-              <div class="table-wrap" style="margin-top:8px;">
-                <table>
-                  <tr><th>議案類型</th><th>最低出席比例</th><th>通過門檻</th></tr>
-                  <tr><td>一般決議事項</td><td>區權人 1/5 以上</td><td>出席過半數同意</td></tr>
-                  <tr><td>規約修訂</td><td>區權人 1/2 以上</td><td>出席 3/4 以上同意</td></tr>
-                  <tr><td>重大修繕工程</td><td>區權人 1/2 以上</td><td>出席過半數同意</td></tr>
-                  <tr><td>管委會解任</td><td>區權人 1/2 以上</td><td>出席 3/4 以上同意</td></tr>
-                </table>
-              </div>
-            </div>
-            <div class="notice danger" style="margin-top:10px;">
-              <div class="notice-icon">⚠️</div>
-              <div>出席人數未達法定門檻時，大會不得進行表決，應擇日重新召開。</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 議程規劃 -->
-      <div class="chapter-card" id="agm3">
-        <div class="chapter-header" onclick="toggleChapter('agm3')">
-          <div class="chapter-num" style="background:#1c2e4a;color:#add2ff;">程</div>
-          <div class="chapter-info"><h4>標準議程規劃</h4><p>開會程序與各議案說明</p></div>
-          <div class="chapter-arrow">›</div>
-        </div>
-        <div class="chapter-body">
-          <div class="chapter-content">
-            <div class="schedule-grid">
-              <div class="schedule-row"><div class="schedule-time">一、開會</div><div class="schedule-task">主席宣布開會，報告出席人數及比例是否達法定門檻</div></div>
-              <div class="schedule-row"><div class="schedule-time">二、報告</div><div class="schedule-task">主委報告本年度社區重大事項執行成果</div></div>
-              <div class="schedule-row"><div class="schedule-time">三、決算</div><div class="schedule-task">財務委員報告年度收支決算，接受詢問</div></div>
-              <div class="schedule-row"><div class="schedule-time">四、預算</div><div class="schedule-task">提案審議次年度預算草案，表決通過</div></div>
-              <div class="schedule-row"><div class="schedule-time">五、選舉</div><div class="schedule-task">（任期屆滿時）選任新任管委會委員及監察委員</div></div>
-              <div class="schedule-row"><div class="schedule-time">六、提案</div><div class="schedule-task">審議各方提案（規約修訂、重大工程、管理費調整等）</div></div>
-              <div class="schedule-row"><div class="schedule-time">七、臨時動議</div><div class="schedule-task">接受現場臨時動議，以非重大事項為限</div></div>
-              <div class="schedule-row"><div class="schedule-time">八、散會</div><div class="schedule-task">主席宣布散會，場地清潔復原</div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 選舉規則 -->
-      <div class="chapter-card" id="agm4">
-        <div class="chapter-header" onclick="toggleChapter('agm4')">
-          <div class="chapter-num" style="background:#1c2e4a;color:#add2ff;">選</div>
-          <div class="chapter-info"><h4>委員選舉規則</h4><p>候選資格、投票、計票</p></div>
-          <div class="chapter-arrow">›</div>
-        </div>
-        <div class="chapter-body">
-          <div class="chapter-content">
-            <div class="article-item">
-              <div class="article-title">候選人資格</div>
-              <ul class="rule-list">
-                <li>須為本社區區分所有權人本人，或其配偶、成年子女</li>
-                <li>管理費無欠繳紀錄</li>
-                <li>未受禁治產宣告、無犯罪紀錄（涉及財務、詐欺類）</li>
-                <li>報名截止時間：大會召開前 15 天</li>
-              </ul>
-            </div>
-            <div class="article-item">
-              <div class="article-title">投票與計票程序</div>
-              <ul class="rule-list">
-                <li>採無記名單記投票，每位出席人投票數等於應選名額</li>
-                <li>計票人員至少 3 人，由監察委員或現場推選之住戶擔任</li>
-                <li>開票過程全程公開，得錄影存證</li>
-                <li>票數相同時以抽籤決定</li>
-                <li>當場公布當選名單，並於 7 日內書面通知當選人</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 表決與紀錄 -->
-      <div class="chapter-card" id="agm5">
-        <div class="chapter-header" onclick="toggleChapter('agm5')">
-          <div class="chapter-num" style="background:#1c2e4a;color:#add2ff;">錄</div>
-          <div class="chapter-info"><h4>表決方式與會議紀錄</h4><p>舉手、記名、書面 / 紀錄公告</p></div>
-          <div class="chapter-arrow">›</div>
-        </div>
-        <div class="chapter-body">
-          <div class="chapter-content">
-            <div class="article-item">
-              <div class="article-title">表決方式</div>
-              <div class="table-wrap" style="margin-top:8px;">
-                <table>
-                  <tr><th>情況</th><th>表決方式</th></tr>
-                  <tr><td>一般議案</td><td>舉手表決（主席詢問贊成、反對、棄權）</td></tr>
-                  <tr><td>爭議議案</td><td>記名投票（書面填寫姓名及意見）</td></tr>
-                  <tr><td>委員選舉</td><td>無記名投票（選票）</td></tr>
-                  <tr><td>規約修訂</td><td>書面表決或記名投票</td></tr>
-                </table>
-              </div>
-            </div>
-            <div class="article-item">
-              <div class="article-title">會議紀錄要求</div>
-              <ul class="rule-list">
-                <li>紀錄須載明：日期、地點、出席人數、議案內容、表決結果</li>
-                <li>由主席及紀錄人員共同簽名確認</li>
-                <li>大會後 7 日內公告於公告欄及社區平台</li>
-                <li>正本送存主管機關（各縣市建管處）備查</li>
-                <li>紀錄文件保存至少 10 年</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 臨時大會 -->
-      <div class="chapter-card" id="agm6">
-        <div class="chapter-header" onclick="toggleChapter('agm6')">
-          <div class="chapter-num" style="background:#1c2e4a;color:#add2ff;">臨</div>
-          <div class="chapter-info"><h4>臨時大會處理程序</h4><p>申請、審查、召開</p></div>
-          <div class="chapter-arrow">›</div>
-        </div>
-        <div class="chapter-body">
-          <div class="chapter-content">
-            <div class="schedule-grid">
-              <div class="schedule-row"><div class="schedule-time">申請</div><div class="schedule-task">1/5 以上區權人書面連署，敘明召開事由提交管委會</div></div>
-              <div class="schedule-row"><div class="schedule-time">審查</div><div class="schedule-task">管委會 7 日內審查申請是否符合規定，通知申請人</div></div>
-              <div class="schedule-row"><div class="schedule-time">通知</div><div class="schedule-task">確認召開後，依一般大會程序發出通知（至少 10 天前）</div></div>
-              <div class="schedule-row"><div class="schedule-time">議案限制</div><div class="schedule-task">臨時大會僅得審議通知書所載明之議案，不得追加</div></div>
-            </div>
-            <div class="notice info" style="margin-top:10px;">
-              <div class="notice-icon">📋</div>
-              <div>若管委會無正當理由拒絕召開，申請連署之區分所有權人得自行召集，費用由管委會負擔。</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div><!-- end tab-agm -->
-
-  <!-- ══ TAB 4：財務作業 ══ -->
+  <!-- ══ TAB 3：財務作業 ══ -->
   <div class="tab-panel" id="tab-finance">
     <div class="chapter-list">
       <div class="chapter-card" id="fin1">
@@ -519,6 +283,7 @@
 <nav class="bottom-nav">
   <a class="bottom-nav-item" href="index.html"><span>🏠</span>首頁</a>
   <a class="bottom-nav-item" href="ch01-rules.html"><span>📜</span>規約</a>
+  <a class="bottom-nav-item active" href="ch02-committee.html"><span>🏛️</span>管委會</a>
   <a class="bottom-nav-item" href="ch03-residents.html"><span>👥</span>住戶</a>
   <a class="bottom-nav-item" href="ch04-property.html"><span>🔒</span>物業</a>
   <a class="bottom-nav-item" href="ch05-cleaning.html"><span>🧹</span>清潔</a>
