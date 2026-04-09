@@ -2,7 +2,22 @@
 <html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+  <!-- ════ PWA / iOS 全螢幕設定 ════ -->
+  <!-- iOS：加入主畫面後以全螢幕 App 模式開啟（隱藏網址列）-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="社區手冊">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Android / Chrome PWA -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#1a3a2a">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- 防止 iOS 自動偵測電話號碼格式化 -->
+  <meta name="format-detection" content="telephone=no">
 <title>第四篇：物業管理準則｜社區管理規劃手冊</title>
 <link rel="stylesheet" href="shared.css">
 </head>
@@ -305,5 +320,16 @@
 </nav>
 
 <script src="shared.js"></script>
+
+  <!-- PWA Service Worker 註冊（離線快取） -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+          .then(r => console.log('SW registered'))
+          .catch(e => console.log('SW error', e));
+      });
+    }
+  </script>
 </body>
 </html>
