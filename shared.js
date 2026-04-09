@@ -77,10 +77,7 @@ let deferredInstallPrompt = null;
 window.addEventListener('beforeinstallprompt', e => {
   e.preventDefault();
   deferredInstallPrompt = e;
-  setTimeout(() => {
-    const b = document.getElementById('install-banner');
-    if (b) b.classList.add('show');
-  }, 2000);
+  // 不自動顯示，只靜默保存 prompt 備用
 });
 
 function installPWA() {
