@@ -42,15 +42,15 @@ function markActiveNav(pageId) {
 const TRACKS = [
   {
     title: '🎹 輕柔鋼琴 - Relaxing Piano',
-    url: '/1.mp3'
+    url: '1.mp3'
   },
   {
     title: '🎹 寧靜時光 - Peaceful Moment',
-    url: '/2.mp3'
+    url: '2.mp3'
   },
   {
     title: '🎹 溫柔旋律 - Gentle Melody',
-    url: '/3.mp3'
+    url: '3.mp3'
   }
 ];
 
