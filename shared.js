@@ -42,15 +42,15 @@ function markActiveNav(pageId) {
 const TRACKS = [
   {
     title: '🎹 輕柔鋼琴 - Relaxing Piano',
-    url: 'https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0c6ff1bab.mp3'
+    url: '1.mp3'
   },
   {
     title: '🎹 寧靜時光 - Peaceful Moment',
-    url: 'https://cdn.pixabay.com/download/audio/2021/11/25/audio_5b84571947.mp3'
+    url: '2.mp3'
   },
   {
     title: '🎹 溫柔旋律 - Gentle Melody',
-    url: 'https://cdn.pixabay.com/download/audio/2022/03/10/audio_6516d04a3b.mp3'
+    url: '3.mp3'
   }
 ];
 
