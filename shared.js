@@ -86,16 +86,14 @@ window.addEventListener('beforeinstallprompt', e => {
 function installPWA() {
   if (deferredInstallPrompt) {
     deferredInstallPrompt.prompt();
-    deferredInstallPrompt.userChoice.then(() => {
-      deferredInstallPrompt = null;
-    });
+    deferredInstallPrompt.userChoice.then(() => { deferredInstallPrompt = null; });
   }
-  dismissBanner();   // 不論有沒有 prompt，都關掉橫幅
+  dismissBanner();
 }
 
 function dismissBanner() {
   const b = document.getElementById('install-banner');
-  if (b) b.remove();   // 直接從 DOM 移除，而非只收起
+  if (b) b.remove();
 }
 
 window.addEventListener('appinstalled', () => {

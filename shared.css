@@ -63,7 +63,7 @@ body {
 .nav-header h1 { font-family: 'Noto Serif TC', serif; color: var(--accent-light); font-size: 18px; font-weight: 600; line-height: 1.4; }
 .nav-header p { color: var(--accent); font-size: 12px; margin-top: 4px; opacity: 0.8; }
 .nav-close { position: absolute; top: 16px; right: 16px; background: rgba(255,255,255,0.1); border: none; color: var(--accent-light); width: 32px; height: 32px; border-radius: 50%; cursor: pointer; font-size: 18px; display: flex; align-items: center; justify-content: center; }
-.nav-section-label { padding: 20px 24px 8px; color: var(--accent); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; opacity: 0.7; }
+.nav-section-label { padding: 20px 24px 8px; color: var(--accent); font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; opacity: 0.7; }
 .nav-item { padding: 12px 24px; color: rgba(255,255,255,0.8); cursor: pointer; display: flex; align-items: center; gap: 12px; font-size: 14px; transition: background 0.2s; border-left: 3px solid transparent; text-decoration: none; }
 .nav-item:hover, .nav-item.active { background: rgba(200,169,110,0.12); color: var(--accent-light); border-left-color: var(--accent); }
 .nav-item-icon { width: 32px; height: 32px; border-radius: 8px; background: rgba(200,169,110,0.15); display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; }
@@ -261,7 +261,7 @@ tr:nth-child(even) td { background: var(--surface-alt); }
 }
 
 #music-label {
-  font-size: 10px;
+  font-size: 9px;
   color: var(--text-muted);
   font-family: 'Noto Sans TC', sans-serif;
   letter-spacing: 0.04em;
@@ -283,7 +283,7 @@ tr:nth-child(even) td { background: var(--surface-alt); }
 }
 #music-volume-wrap.show { display: flex; }
 #music-volume-wrap label {
-  font-size: 10px;
+  font-size: 9px;
   color: var(--text-muted);
   font-family: 'Noto Sans TC', sans-serif;
 }
